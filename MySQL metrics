@@ -1,0 +1,2430 @@
+# HELP go_gc_duration_seconds A summary of the GC invocation durations.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 1.6018e-05
+go_gc_duration_seconds{quantile="0.25"} 1.795e-05
+go_gc_duration_seconds{quantile="0.5"} 1.9636e-05
+go_gc_duration_seconds{quantile="0.75"} 2.9493e-05
+go_gc_duration_seconds{quantile="1"} 8.5781e-05
+go_gc_duration_seconds_sum 0.001238968
+go_gc_duration_seconds_count 50
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 9
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.10.3"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 2.729528e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 1.28598976e+08
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 1.46745e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 2.227888e+06
+# HELP go_memstats_gc_cpu_fraction The fraction of this program's available CPU time used by the GC since the program started.
+# TYPE go_memstats_gc_cpu_fraction gauge
+go_memstats_gc_cpu_fraction 0.0002059810803872457
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 405504
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 2.729528e+06
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 1.744896e+06
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 4.251648e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 31836
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 0
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 5.996544e+06
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.5713142400997324e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 541
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 2.259724e+06
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 1736
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 16384
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 55632
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 65536
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 4.194304e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 476350
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 294912
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 294912
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 8.72268e+06
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 4
+# HELP http_request_duration_microseconds The HTTP request latencies in microseconds.
+# TYPE http_request_duration_microseconds summary
+http_request_duration_microseconds{handler="metrics",quantile="0.5"} 93656.005
+http_request_duration_microseconds{handler="metrics",quantile="0.9"} 100875.624
+http_request_duration_microseconds{handler="metrics",quantile="0.99"} 401887.679
+http_request_duration_microseconds_sum{handler="metrics"} 5.409944995000002e+06
+http_request_duration_microseconds_count{handler="metrics"} 51
+# HELP http_request_size_bytes The HTTP request sizes in bytes.
+# TYPE http_request_size_bytes summary
+http_request_size_bytes{handler="metrics",quantile="0.5"} 164
+http_request_size_bytes{handler="metrics",quantile="0.9"} 164
+http_request_size_bytes{handler="metrics",quantile="0.99"} 164
+http_request_size_bytes_sum{handler="metrics"} 8364
+http_request_size_bytes_count{handler="metrics"} 51
+# HELP http_requests_total Total number of HTTP requests made.
+# TYPE http_requests_total counter
+http_requests_total{code="200",handler="metrics",method="get"} 51
+# HELP http_response_size_bytes The HTTP response sizes in bytes.
+# TYPE http_response_size_bytes summary
+http_response_size_bytes{handler="metrics",quantile="0.5"} 15684
+http_response_size_bytes{handler="metrics",quantile="0.9"} 15706
+http_response_size_bytes{handler="metrics",quantile="0.99"} 15713
+http_response_size_bytes_sum{handler="metrics"} 799156
+http_response_size_bytes_count{handler="metrics"} 51
+# HELP mysql_engine_innodb_queries_in_queue Queries in queue.
+# TYPE mysql_engine_innodb_queries_in_queue gauge
+mysql_engine_innodb_queries_in_queue 0
+# HELP mysql_engine_innodb_queries_inside_innodb Queries inside InnoDB.
+# TYPE mysql_engine_innodb_queries_inside_innodb gauge
+mysql_engine_innodb_queries_inside_innodb 0
+# HELP mysql_engine_innodb_read_views_open_inside_innodb Read views open inside InnoDB.
+# TYPE mysql_engine_innodb_read_views_open_inside_innodb gauge
+mysql_engine_innodb_read_views_open_inside_innodb 0
+# HELP mysql_exporter_collector_duration_seconds Collector time duration.
+# TYPE mysql_exporter_collector_duration_seconds gauge
+mysql_exporter_collector_duration_seconds{collector="collect.auto_increment.columns"} 0.059646343
+mysql_exporter_collector_duration_seconds{collector="collect.binlog_size"} 0.001614802
+mysql_exporter_collector_duration_seconds{collector="collect.engine_innodb_status"} 0.001074863
+mysql_exporter_collector_duration_seconds{collector="collect.engine_tokudb_status"} 0.002441688
+mysql_exporter_collector_duration_seconds{collector="collect.global_status"} 0.004561532
+mysql_exporter_collector_duration_seconds{collector="collect.global_variables"} 0.008552538
+mysql_exporter_collector_duration_seconds{collector="collect.info_schema.tables"} 0.075131079
+mysql_exporter_collector_duration_seconds{collector="collect.slave_status"} 0.091594176
+mysql_exporter_collector_duration_seconds{collector="connection"} 0.001059249
+# HELP mysql_exporter_last_scrape_error Whether the last scrape of metrics from MySQL resulted in an error (1 for error, 0 for success).
+# TYPE mysql_exporter_last_scrape_error gauge
+mysql_exporter_last_scrape_error 1
+# HELP mysql_exporter_scrape_errors_total Total number of times an error occurred scraping a MySQL.
+# TYPE mysql_exporter_scrape_errors_total counter
+mysql_exporter_scrape_errors_total{collector="collect.engine_tokudb_status"} 52
+# HELP mysql_exporter_scrapes_total Total number of times MySQL was scraped for metrics.
+# TYPE mysql_exporter_scrapes_total counter
+mysql_exporter_scrapes_total 52
+# HELP mysql_global_status_aborted_clients Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_aborted_clients untyped
+mysql_global_status_aborted_clients 0
+# HELP mysql_global_status_aborted_connects Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_aborted_connects untyped
+mysql_global_status_aborted_connects 0
+# HELP mysql_global_status_binlog_cache_disk_use Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_binlog_cache_disk_use untyped
+mysql_global_status_binlog_cache_disk_use 0
+# HELP mysql_global_status_binlog_cache_use Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_binlog_cache_use untyped
+mysql_global_status_binlog_cache_use 0
+# HELP mysql_global_status_binlog_stmt_cache_disk_use Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_binlog_stmt_cache_disk_use untyped
+mysql_global_status_binlog_stmt_cache_disk_use 0
+# HELP mysql_global_status_binlog_stmt_cache_use Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_binlog_stmt_cache_use untyped
+mysql_global_status_binlog_stmt_cache_use 0
+# HELP mysql_global_status_buffer_pool_page_changes_total Innodb buffer pool page state changes.
+# TYPE mysql_global_status_buffer_pool_page_changes_total counter
+mysql_global_status_buffer_pool_page_changes_total{operation="flushed"} 1565
+mysql_global_status_buffer_pool_page_changes_total{operation="total"} 8192
+# HELP mysql_global_status_buffer_pool_pages Innodb buffer pool pages by state.
+# TYPE mysql_global_status_buffer_pool_pages gauge
+mysql_global_status_buffer_pool_pages{state="data"} 304
+mysql_global_status_buffer_pool_pages{state="dirty"} 0
+mysql_global_status_buffer_pool_pages{state="free"} 7887
+mysql_global_status_buffer_pool_pages{state="misc"} 1
+# HELP mysql_global_status_bytes_received Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_bytes_received untyped
+mysql_global_status_bytes_received 131376
+# HELP mysql_global_status_bytes_sent Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_bytes_sent untyped
+mysql_global_status_bytes_sent 2.215952e+06
+# HELP mysql_global_status_commands_total Total number of executed MySQL commands.
+# TYPE mysql_global_status_commands_total counter
+mysql_global_status_commands_total{command="admin_commands"} 53
+mysql_global_status_commands_total{command="alter_db"} 0
+mysql_global_status_commands_total{command="alter_db_upgrade"} 0
+mysql_global_status_commands_total{command="alter_event"} 0
+mysql_global_status_commands_total{command="alter_function"} 0
+mysql_global_status_commands_total{command="alter_instance"} 0
+mysql_global_status_commands_total{command="alter_procedure"} 0
+mysql_global_status_commands_total{command="alter_server"} 0
+mysql_global_status_commands_total{command="alter_table"} 0
+mysql_global_status_commands_total{command="alter_tablespace"} 0
+mysql_global_status_commands_total{command="alter_user"} 0
+mysql_global_status_commands_total{command="analyze"} 0
+mysql_global_status_commands_total{command="assign_to_keycache"} 0
+mysql_global_status_commands_total{command="begin"} 0
+mysql_global_status_commands_total{command="binlog"} 0
+mysql_global_status_commands_total{command="call_procedure"} 0
+mysql_global_status_commands_total{command="change_db"} 0
+mysql_global_status_commands_total{command="change_master"} 0
+mysql_global_status_commands_total{command="change_repl_filter"} 0
+mysql_global_status_commands_total{command="check"} 0
+mysql_global_status_commands_total{command="checksum"} 0
+mysql_global_status_commands_total{command="commit"} 0
+mysql_global_status_commands_total{command="create_db"} 0
+mysql_global_status_commands_total{command="create_event"} 0
+mysql_global_status_commands_total{command="create_function"} 0
+mysql_global_status_commands_total{command="create_index"} 0
+mysql_global_status_commands_total{command="create_procedure"} 0
+mysql_global_status_commands_total{command="create_server"} 0
+mysql_global_status_commands_total{command="create_table"} 0
+mysql_global_status_commands_total{command="create_trigger"} 0
+mysql_global_status_commands_total{command="create_udf"} 0
+mysql_global_status_commands_total{command="create_user"} 0
+mysql_global_status_commands_total{command="create_view"} 0
+mysql_global_status_commands_total{command="dealloc_sql"} 0
+mysql_global_status_commands_total{command="delete"} 0
+mysql_global_status_commands_total{command="delete_multi"} 0
+mysql_global_status_commands_total{command="do"} 0
+mysql_global_status_commands_total{command="drop_db"} 0
+mysql_global_status_commands_total{command="drop_event"} 0
+mysql_global_status_commands_total{command="drop_function"} 0
+mysql_global_status_commands_total{command="drop_index"} 0
+mysql_global_status_commands_total{command="drop_procedure"} 0
+mysql_global_status_commands_total{command="drop_server"} 0
+mysql_global_status_commands_total{command="drop_table"} 0
+mysql_global_status_commands_total{command="drop_trigger"} 0
+mysql_global_status_commands_total{command="drop_user"} 0
+mysql_global_status_commands_total{command="drop_view"} 0
+mysql_global_status_commands_total{command="empty_query"} 0
+mysql_global_status_commands_total{command="execute_sql"} 0
+mysql_global_status_commands_total{command="explain_other"} 0
+mysql_global_status_commands_total{command="flush"} 0
+mysql_global_status_commands_total{command="get_diagnostics"} 0
+mysql_global_status_commands_total{command="grant"} 0
+mysql_global_status_commands_total{command="group_replication_start"} 0
+mysql_global_status_commands_total{command="group_replication_stop"} 0
+mysql_global_status_commands_total{command="ha_close"} 0
+mysql_global_status_commands_total{command="ha_open"} 0
+mysql_global_status_commands_total{command="ha_read"} 0
+mysql_global_status_commands_total{command="help"} 0
+mysql_global_status_commands_total{command="insert"} 0
+mysql_global_status_commands_total{command="insert_select"} 0
+mysql_global_status_commands_total{command="install_plugin"} 0
+mysql_global_status_commands_total{command="kill"} 0
+mysql_global_status_commands_total{command="load"} 0
+mysql_global_status_commands_total{command="lock_tables"} 0
+mysql_global_status_commands_total{command="optimize"} 0
+mysql_global_status_commands_total{command="preload_keys"} 0
+mysql_global_status_commands_total{command="prepare_sql"} 0
+mysql_global_status_commands_total{command="purge"} 0
+mysql_global_status_commands_total{command="purge_before_date"} 0
+mysql_global_status_commands_total{command="release_savepoint"} 0
+mysql_global_status_commands_total{command="rename_table"} 0
+mysql_global_status_commands_total{command="rename_user"} 0
+mysql_global_status_commands_total{command="repair"} 0
+mysql_global_status_commands_total{command="replace"} 0
+mysql_global_status_commands_total{command="replace_select"} 0
+mysql_global_status_commands_total{command="reset"} 0
+mysql_global_status_commands_total{command="resignal"} 0
+mysql_global_status_commands_total{command="revoke"} 0
+mysql_global_status_commands_total{command="revoke_all"} 0
+mysql_global_status_commands_total{command="rollback"} 0
+mysql_global_status_commands_total{command="rollback_to_savepoint"} 0
+mysql_global_status_commands_total{command="savepoint"} 0
+mysql_global_status_commands_total{command="select"} 308
+mysql_global_status_commands_total{command="set_option"} 52
+mysql_global_status_commands_total{command="show_binlog_events"} 0
+mysql_global_status_commands_total{command="show_binlogs"} 0
+mysql_global_status_commands_total{command="show_charsets"} 0
+mysql_global_status_commands_total{command="show_collations"} 0
+mysql_global_status_commands_total{command="show_create_db"} 0
+mysql_global_status_commands_total{command="show_create_event"} 0
+mysql_global_status_commands_total{command="show_create_func"} 0
+mysql_global_status_commands_total{command="show_create_proc"} 0
+mysql_global_status_commands_total{command="show_create_table"} 0
+mysql_global_status_commands_total{command="show_create_trigger"} 0
+mysql_global_status_commands_total{command="show_create_user"} 0
+mysql_global_status_commands_total{command="show_databases"} 0
+mysql_global_status_commands_total{command="show_engine_logs"} 0
+mysql_global_status_commands_total{command="show_engine_mutex"} 0
+mysql_global_status_commands_total{command="show_engine_status"} 52
+mysql_global_status_commands_total{command="show_errors"} 0
+mysql_global_status_commands_total{command="show_events"} 0
+mysql_global_status_commands_total{command="show_fields"} 0
+mysql_global_status_commands_total{command="show_function_code"} 0
+mysql_global_status_commands_total{command="show_function_status"} 0
+mysql_global_status_commands_total{command="show_grants"} 0
+mysql_global_status_commands_total{command="show_keys"} 0
+mysql_global_status_commands_total{command="show_master_status"} 0
+mysql_global_status_commands_total{command="show_open_tables"} 0
+mysql_global_status_commands_total{command="show_plugins"} 0
+mysql_global_status_commands_total{command="show_privileges"} 0
+mysql_global_status_commands_total{command="show_procedure_code"} 0
+mysql_global_status_commands_total{command="show_procedure_status"} 0
+mysql_global_status_commands_total{command="show_processlist"} 0
+mysql_global_status_commands_total{command="show_profile"} 0
+mysql_global_status_commands_total{command="show_profiles"} 0
+mysql_global_status_commands_total{command="show_relaylog_events"} 0
+mysql_global_status_commands_total{command="show_slave_hosts"} 0
+mysql_global_status_commands_total{command="show_slave_status"} 51
+mysql_global_status_commands_total{command="show_status"} 52
+mysql_global_status_commands_total{command="show_storage_engines"} 0
+mysql_global_status_commands_total{command="show_table_status"} 0
+mysql_global_status_commands_total{command="show_tables"} 0
+mysql_global_status_commands_total{command="show_triggers"} 0
+mysql_global_status_commands_total{command="show_variables"} 51
+mysql_global_status_commands_total{command="show_warnings"} 0
+mysql_global_status_commands_total{command="shutdown"} 0
+mysql_global_status_commands_total{command="signal"} 0
+mysql_global_status_commands_total{command="slave_start"} 0
+mysql_global_status_commands_total{command="slave_stop"} 0
+mysql_global_status_commands_total{command="stmt_close"} 0
+mysql_global_status_commands_total{command="stmt_execute"} 0
+mysql_global_status_commands_total{command="stmt_fetch"} 0
+mysql_global_status_commands_total{command="stmt_prepare"} 0
+mysql_global_status_commands_total{command="stmt_reprepare"} 0
+mysql_global_status_commands_total{command="stmt_reset"} 0
+mysql_global_status_commands_total{command="stmt_send_long_data"} 0
+mysql_global_status_commands_total{command="truncate"} 0
+mysql_global_status_commands_total{command="uninstall_plugin"} 0
+mysql_global_status_commands_total{command="unlock_tables"} 0
+mysql_global_status_commands_total{command="update"} 0
+mysql_global_status_commands_total{command="update_multi"} 0
+mysql_global_status_commands_total{command="xa_commit"} 0
+mysql_global_status_commands_total{command="xa_end"} 0
+mysql_global_status_commands_total{command="xa_prepare"} 0
+mysql_global_status_commands_total{command="xa_recover"} 0
+mysql_global_status_commands_total{command="xa_rollback"} 0
+mysql_global_status_commands_total{command="xa_start"} 0
+# HELP mysql_global_status_connection_errors_total Total number of MySQL connection errors.
+# TYPE mysql_global_status_connection_errors_total counter
+mysql_global_status_connection_errors_total{error="accept"} 0
+mysql_global_status_connection_errors_total{error="internal"} 0
+mysql_global_status_connection_errors_total{error="max_connections"} 0
+mysql_global_status_connection_errors_total{error="peer_address"} 0
+mysql_global_status_connection_errors_total{error="select"} 0
+mysql_global_status_connection_errors_total{error="tcpwrap"} 0
+# HELP mysql_global_status_connections Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_connections untyped
+mysql_global_status_connections 55
+# HELP mysql_global_status_created_tmp_disk_tables Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_created_tmp_disk_tables untyped
+mysql_global_status_created_tmp_disk_tables 2142
+# HELP mysql_global_status_created_tmp_files Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_created_tmp_files untyped
+mysql_global_status_created_tmp_files 6
+# HELP mysql_global_status_created_tmp_tables Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_created_tmp_tables untyped
+mysql_global_status_created_tmp_tables 23462
+# HELP mysql_global_status_delayed_errors Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_delayed_errors untyped
+mysql_global_status_delayed_errors 0
+# HELP mysql_global_status_delayed_insert_threads Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_delayed_insert_threads untyped
+mysql_global_status_delayed_insert_threads 0
+# HELP mysql_global_status_delayed_writes Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_delayed_writes untyped
+mysql_global_status_delayed_writes 0
+# HELP mysql_global_status_flush_commands Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_flush_commands untyped
+mysql_global_status_flush_commands 1
+# HELP mysql_global_status_handlers_total Total number of executed MySQL handlers.
+# TYPE mysql_global_status_handlers_total counter
+mysql_global_status_handlers_total{handler="commit"} 5
+mysql_global_status_handlers_total{handler="delete"} 0
+mysql_global_status_handlers_total{handler="discover"} 0
+mysql_global_status_handlers_total{handler="external_lock"} 1237
+mysql_global_status_handlers_total{handler="mrr_init"} 0
+mysql_global_status_handlers_total{handler="prepare"} 0
+mysql_global_status_handlers_total{handler="read_first"} 59
+mysql_global_status_handlers_total{handler="read_key"} 465
+mysql_global_status_handlers_total{handler="read_last"} 0
+mysql_global_status_handlers_total{handler="read_next"} 2
+mysql_global_status_handlers_total{handler="read_prev"} 0
+mysql_global_status_handlers_total{handler="read_rnd"} 0
+mysql_global_status_handlers_total{handler="read_rnd_next"} 238001
+mysql_global_status_handlers_total{handler="rollback"} 0
+mysql_global_status_handlers_total{handler="savepoint"} 0
+mysql_global_status_handlers_total{handler="savepoint_rollback"} 0
+mysql_global_status_handlers_total{handler="update"} 0
+mysql_global_status_handlers_total{handler="write"} 63756
+# HELP mysql_global_status_innodb_available_undo_logs Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_available_undo_logs untyped
+mysql_global_status_innodb_available_undo_logs 128
+# HELP mysql_global_status_innodb_buffer_pool_bytes_data Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_buffer_pool_bytes_data untyped
+mysql_global_status_innodb_buffer_pool_bytes_data 4.980736e+06
+# HELP mysql_global_status_innodb_buffer_pool_bytes_dirty Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_buffer_pool_bytes_dirty untyped
+mysql_global_status_innodb_buffer_pool_bytes_dirty 0
+# HELP mysql_global_status_innodb_buffer_pool_read_ahead Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_buffer_pool_read_ahead untyped
+mysql_global_status_innodb_buffer_pool_read_ahead 0
+# HELP mysql_global_status_innodb_buffer_pool_read_ahead_evicted Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_buffer_pool_read_ahead_evicted untyped
+mysql_global_status_innodb_buffer_pool_read_ahead_evicted 0
+# HELP mysql_global_status_innodb_buffer_pool_read_ahead_rnd Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_buffer_pool_read_ahead_rnd untyped
+mysql_global_status_innodb_buffer_pool_read_ahead_rnd 0
+# HELP mysql_global_status_innodb_buffer_pool_read_requests Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_buffer_pool_read_requests untyped
+mysql_global_status_innodb_buffer_pool_read_requests 73678
+# HELP mysql_global_status_innodb_buffer_pool_reads Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_buffer_pool_reads untyped
+mysql_global_status_innodb_buffer_pool_reads 243
+# HELP mysql_global_status_innodb_buffer_pool_wait_free Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_buffer_pool_wait_free untyped
+mysql_global_status_innodb_buffer_pool_wait_free 0
+# HELP mysql_global_status_innodb_buffer_pool_write_requests Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_buffer_pool_write_requests untyped
+mysql_global_status_innodb_buffer_pool_write_requests 62138
+# HELP mysql_global_status_innodb_data_fsyncs Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_data_fsyncs untyped
+mysql_global_status_innodb_data_fsyncs 12
+# HELP mysql_global_status_innodb_data_pending_fsyncs Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_data_pending_fsyncs untyped
+mysql_global_status_innodb_data_pending_fsyncs 0
+# HELP mysql_global_status_innodb_data_pending_reads Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_data_pending_reads untyped
+mysql_global_status_innodb_data_pending_reads 0
+# HELP mysql_global_status_innodb_data_pending_writes Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_data_pending_writes untyped
+mysql_global_status_innodb_data_pending_writes 0
+# HELP mysql_global_status_innodb_data_read Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_data_read untyped
+mysql_global_status_innodb_data_read 4.051456e+06
+# HELP mysql_global_status_innodb_data_reads Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_data_reads untyped
+mysql_global_status_innodb_data_reads 276
+# HELP mysql_global_status_innodb_data_writes Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_data_writes untyped
+mysql_global_status_innodb_data_writes 1586
+# HELP mysql_global_status_innodb_data_written Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_data_written untyped
+mysql_global_status_innodb_data_written 2.5693696e+07
+# HELP mysql_global_status_innodb_dblwr_pages_written Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_dblwr_pages_written untyped
+mysql_global_status_innodb_dblwr_pages_written 3
+# HELP mysql_global_status_innodb_dblwr_writes Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_dblwr_writes untyped
+mysql_global_status_innodb_dblwr_writes 2
+# HELP mysql_global_status_innodb_log_waits Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_log_waits untyped
+mysql_global_status_innodb_log_waits 0
+# HELP mysql_global_status_innodb_log_write_requests Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_log_write_requests untyped
+mysql_global_status_innodb_log_write_requests 0
+# HELP mysql_global_status_innodb_log_writes Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_log_writes untyped
+mysql_global_status_innodb_log_writes 4
+# HELP mysql_global_status_innodb_num_open_files Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_num_open_files untyped
+mysql_global_status_innodb_num_open_files 25
+# HELP mysql_global_status_innodb_os_log_fsyncs Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_os_log_fsyncs untyped
+mysql_global_status_innodb_os_log_fsyncs 7
+# HELP mysql_global_status_innodb_os_log_pending_fsyncs Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_os_log_pending_fsyncs untyped
+mysql_global_status_innodb_os_log_pending_fsyncs 0
+# HELP mysql_global_status_innodb_os_log_pending_writes Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_os_log_pending_writes untyped
+mysql_global_status_innodb_os_log_pending_writes 0
+# HELP mysql_global_status_innodb_os_log_written Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_os_log_written untyped
+mysql_global_status_innodb_os_log_written 2048
+# HELP mysql_global_status_innodb_page_size Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_page_size untyped
+mysql_global_status_innodb_page_size 16384
+# HELP mysql_global_status_innodb_pages_created Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_pages_created untyped
+mysql_global_status_innodb_pages_created 62
+# HELP mysql_global_status_innodb_pages_read Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_pages_read untyped
+mysql_global_status_innodb_pages_read 242
+# HELP mysql_global_status_innodb_pages_written Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_pages_written untyped
+mysql_global_status_innodb_pages_written 1565
+# HELP mysql_global_status_innodb_row_lock_current_waits Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_row_lock_current_waits untyped
+mysql_global_status_innodb_row_lock_current_waits 0
+# HELP mysql_global_status_innodb_row_lock_time Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_row_lock_time untyped
+mysql_global_status_innodb_row_lock_time 0
+# HELP mysql_global_status_innodb_row_lock_time_avg Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_row_lock_time_avg untyped
+mysql_global_status_innodb_row_lock_time_avg 0
+# HELP mysql_global_status_innodb_row_lock_time_max Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_row_lock_time_max untyped
+mysql_global_status_innodb_row_lock_time_max 0
+# HELP mysql_global_status_innodb_row_lock_waits Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_row_lock_waits untyped
+mysql_global_status_innodb_row_lock_waits 0
+# HELP mysql_global_status_innodb_row_ops_total Total number of MySQL InnoDB row operations.
+# TYPE mysql_global_status_innodb_row_ops_total counter
+mysql_global_status_innodb_row_ops_total{operation="deleted"} 0
+mysql_global_status_innodb_row_ops_total{operation="inserted"} 129795
+mysql_global_status_innodb_row_ops_total{operation="read"} 129805
+mysql_global_status_innodb_row_ops_total{operation="updated"} 0
+# HELP mysql_global_status_innodb_truncated_status_writes Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_innodb_truncated_status_writes untyped
+mysql_global_status_innodb_truncated_status_writes 0
+# HELP mysql_global_status_key_blocks_not_flushed Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_key_blocks_not_flushed untyped
+mysql_global_status_key_blocks_not_flushed 0
+# HELP mysql_global_status_key_blocks_unused Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_key_blocks_unused untyped
+mysql_global_status_key_blocks_unused 13396
+# HELP mysql_global_status_key_blocks_used Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_key_blocks_used untyped
+mysql_global_status_key_blocks_used 3
+# HELP mysql_global_status_key_read_requests Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_key_read_requests untyped
+mysql_global_status_key_read_requests 822
+# HELP mysql_global_status_key_reads Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_key_reads untyped
+mysql_global_status_key_reads 207
+# HELP mysql_global_status_key_write_requests Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_key_write_requests untyped
+mysql_global_status_key_write_requests 0
+# HELP mysql_global_status_key_writes Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_key_writes untyped
+mysql_global_status_key_writes 0
+# HELP mysql_global_status_locked_connects Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_locked_connects untyped
+mysql_global_status_locked_connects 0
+# HELP mysql_global_status_max_execution_time_exceeded Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_max_execution_time_exceeded untyped
+mysql_global_status_max_execution_time_exceeded 0
+# HELP mysql_global_status_max_execution_time_set Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_max_execution_time_set untyped
+mysql_global_status_max_execution_time_set 0
+# HELP mysql_global_status_max_execution_time_set_failed Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_max_execution_time_set_failed untyped
+mysql_global_status_max_execution_time_set_failed 0
+# HELP mysql_global_status_max_used_connections Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_max_used_connections untyped
+mysql_global_status_max_used_connections 2
+# HELP mysql_global_status_not_flushed_delayed_rows Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_not_flushed_delayed_rows untyped
+mysql_global_status_not_flushed_delayed_rows 0
+# HELP mysql_global_status_ongoing_anonymous_transaction_count Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ongoing_anonymous_transaction_count untyped
+mysql_global_status_ongoing_anonymous_transaction_count 0
+# HELP mysql_global_status_open_files Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_open_files untyped
+mysql_global_status_open_files 0
+# HELP mysql_global_status_open_streams Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_open_streams untyped
+mysql_global_status_open_streams 0
+# HELP mysql_global_status_open_table_definitions Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_open_table_definitions untyped
+mysql_global_status_open_table_definitions 220
+# HELP mysql_global_status_open_tables Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_open_tables untyped
+mysql_global_status_open_tables 416
+# HELP mysql_global_status_opened_files Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_opened_files untyped
+mysql_global_status_opened_files 1952
+# HELP mysql_global_status_opened_table_definitions Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_opened_table_definitions untyped
+mysql_global_status_opened_table_definitions 220
+# HELP mysql_global_status_opened_tables Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_opened_tables untyped
+mysql_global_status_opened_tables 18825
+# HELP mysql_global_status_performance_schema_lost_total Total number of MySQL instrumentations that could not be loaded or created due to memory constraints.
+# TYPE mysql_global_status_performance_schema_lost_total counter
+mysql_global_status_performance_schema_lost_total{instrumentation="accounts_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="cond_classes_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="cond_instances_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="digest_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="file_classes_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="file_handles_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="file_instances_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="hosts_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="index_stat_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="locker_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="memory_classes_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="metadata_lock_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="mutex_classes_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="mutex_instances_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="nested_statement_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="prepared_statements_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="program_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="rwlock_classes_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="rwlock_instances_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="session_connect_attrs_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="socket_classes_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="socket_instances_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="stage_classes_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="statement_classes_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="table_handles_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="table_instances_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="table_lock_stat_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="thread_classes_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="thread_instances_lost"} 0
+mysql_global_status_performance_schema_lost_total{instrumentation="users_lost"} 0
+# HELP mysql_global_status_prepared_stmt_count Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_prepared_stmt_count untyped
+mysql_global_status_prepared_stmt_count 0
+# HELP mysql_global_status_qcache_free_blocks Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_qcache_free_blocks untyped
+mysql_global_status_qcache_free_blocks 1
+# HELP mysql_global_status_qcache_free_memory Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_qcache_free_memory untyped
+mysql_global_status_qcache_free_memory 1.6760152e+07
+# HELP mysql_global_status_qcache_hits Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_qcache_hits untyped
+mysql_global_status_qcache_hits 0
+# HELP mysql_global_status_qcache_inserts Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_qcache_inserts untyped
+mysql_global_status_qcache_inserts 0
+# HELP mysql_global_status_qcache_lowmem_prunes Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_qcache_lowmem_prunes untyped
+mysql_global_status_qcache_lowmem_prunes 0
+# HELP mysql_global_status_qcache_not_cached Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_qcache_not_cached untyped
+mysql_global_status_qcache_not_cached 308
+# HELP mysql_global_status_qcache_queries_in_cache Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_qcache_queries_in_cache untyped
+mysql_global_status_qcache_queries_in_cache 0
+# HELP mysql_global_status_qcache_total_blocks Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_qcache_total_blocks untyped
+mysql_global_status_qcache_total_blocks 1
+# HELP mysql_global_status_queries Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_queries untyped
+mysql_global_status_queries 928
+# HELP mysql_global_status_questions Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_questions untyped
+mysql_global_status_questions 874
+# HELP mysql_global_status_select_full_join Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_select_full_join untyped
+mysql_global_status_select_full_join 51
+# HELP mysql_global_status_select_full_range_join Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_select_full_range_join untyped
+mysql_global_status_select_full_range_join 0
+# HELP mysql_global_status_select_range Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_select_range untyped
+mysql_global_status_select_range 0
+# HELP mysql_global_status_select_range_check Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_select_range_check untyped
+mysql_global_status_select_range_check 0
+# HELP mysql_global_status_select_scan Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_select_scan untyped
+mysql_global_status_select_scan 462
+# HELP mysql_global_status_slave_open_temp_tables Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_slave_open_temp_tables untyped
+mysql_global_status_slave_open_temp_tables 0
+# HELP mysql_global_status_slow_launch_threads Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_slow_launch_threads untyped
+mysql_global_status_slow_launch_threads 0
+# HELP mysql_global_status_slow_queries Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_slow_queries untyped
+mysql_global_status_slow_queries 0
+# HELP mysql_global_status_sort_merge_passes Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_sort_merge_passes untyped
+mysql_global_status_sort_merge_passes 0
+# HELP mysql_global_status_sort_range Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_sort_range untyped
+mysql_global_status_sort_range 0
+# HELP mysql_global_status_sort_rows Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_sort_rows untyped
+mysql_global_status_sort_rows 0
+# HELP mysql_global_status_sort_scan Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_sort_scan untyped
+mysql_global_status_sort_scan 0
+# HELP mysql_global_status_ssl_accept_renegotiates Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_accept_renegotiates untyped
+mysql_global_status_ssl_accept_renegotiates 0
+# HELP mysql_global_status_ssl_accepts Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_accepts untyped
+mysql_global_status_ssl_accepts 0
+# HELP mysql_global_status_ssl_callback_cache_hits Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_callback_cache_hits untyped
+mysql_global_status_ssl_callback_cache_hits 0
+# HELP mysql_global_status_ssl_client_connects Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_client_connects untyped
+mysql_global_status_ssl_client_connects 0
+# HELP mysql_global_status_ssl_connect_renegotiates Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_connect_renegotiates untyped
+mysql_global_status_ssl_connect_renegotiates 0
+# HELP mysql_global_status_ssl_ctx_verify_depth Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_ctx_verify_depth untyped
+mysql_global_status_ssl_ctx_verify_depth 0
+# HELP mysql_global_status_ssl_ctx_verify_mode Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_ctx_verify_mode untyped
+mysql_global_status_ssl_ctx_verify_mode 0
+# HELP mysql_global_status_ssl_default_timeout Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_default_timeout untyped
+mysql_global_status_ssl_default_timeout 0
+# HELP mysql_global_status_ssl_finished_accepts Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_finished_accepts untyped
+mysql_global_status_ssl_finished_accepts 0
+# HELP mysql_global_status_ssl_finished_connects Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_finished_connects untyped
+mysql_global_status_ssl_finished_connects 0
+# HELP mysql_global_status_ssl_session_cache_hits Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_session_cache_hits untyped
+mysql_global_status_ssl_session_cache_hits 0
+# HELP mysql_global_status_ssl_session_cache_misses Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_session_cache_misses untyped
+mysql_global_status_ssl_session_cache_misses 0
+# HELP mysql_global_status_ssl_session_cache_overflows Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_session_cache_overflows untyped
+mysql_global_status_ssl_session_cache_overflows 0
+# HELP mysql_global_status_ssl_session_cache_size Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_session_cache_size untyped
+mysql_global_status_ssl_session_cache_size 0
+# HELP mysql_global_status_ssl_session_cache_timeouts Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_session_cache_timeouts untyped
+mysql_global_status_ssl_session_cache_timeouts 0
+# HELP mysql_global_status_ssl_sessions_reused Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_sessions_reused untyped
+mysql_global_status_ssl_sessions_reused 0
+# HELP mysql_global_status_ssl_used_session_cache_entries Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_used_session_cache_entries untyped
+mysql_global_status_ssl_used_session_cache_entries 0
+# HELP mysql_global_status_ssl_verify_depth Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_verify_depth untyped
+mysql_global_status_ssl_verify_depth 0
+# HELP mysql_global_status_ssl_verify_mode Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_ssl_verify_mode untyped
+mysql_global_status_ssl_verify_mode 0
+# HELP mysql_global_status_table_locks_immediate Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_table_locks_immediate untyped
+mysql_global_status_table_locks_immediate 609
+# HELP mysql_global_status_table_locks_waited Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_table_locks_waited untyped
+mysql_global_status_table_locks_waited 0
+# HELP mysql_global_status_table_open_cache_hits Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_table_open_cache_hits untyped
+mysql_global_status_table_open_cache_hits 16933
+# HELP mysql_global_status_table_open_cache_misses Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_table_open_cache_misses untyped
+mysql_global_status_table_open_cache_misses 18825
+# HELP mysql_global_status_table_open_cache_overflows Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_table_open_cache_overflows untyped
+mysql_global_status_table_open_cache_overflows 18402
+# HELP mysql_global_status_tc_log_max_pages_used Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_tc_log_max_pages_used untyped
+mysql_global_status_tc_log_max_pages_used 0
+# HELP mysql_global_status_tc_log_page_size Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_tc_log_page_size untyped
+mysql_global_status_tc_log_page_size 0
+# HELP mysql_global_status_tc_log_page_waits Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_tc_log_page_waits untyped
+mysql_global_status_tc_log_page_waits 0
+# HELP mysql_global_status_threads_cached Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_threads_cached untyped
+mysql_global_status_threads_cached 1
+# HELP mysql_global_status_threads_connected Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_threads_connected untyped
+mysql_global_status_threads_connected 1
+# HELP mysql_global_status_threads_created Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_threads_created untyped
+mysql_global_status_threads_created 2
+# HELP mysql_global_status_threads_running Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_threads_running untyped
+mysql_global_status_threads_running 1
+# HELP mysql_global_status_uptime Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_uptime untyped
+mysql_global_status_uptime 254
+# HELP mysql_global_status_uptime_since_flush_status Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_uptime_since_flush_status untyped
+mysql_global_status_uptime_since_flush_status 254
+# HELP mysql_global_status_validate_password_dictionary_file_words_count Generic metric from SHOW GLOBAL STATUS.
+# TYPE mysql_global_status_validate_password_dictionary_file_words_count untyped
+mysql_global_status_validate_password_dictionary_file_words_count 0
+# HELP mysql_global_variables_auto_increment_increment Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_auto_increment_increment gauge
+mysql_global_variables_auto_increment_increment 1
+# HELP mysql_global_variables_auto_increment_offset Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_auto_increment_offset gauge
+mysql_global_variables_auto_increment_offset 1
+# HELP mysql_global_variables_autocommit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_autocommit gauge
+mysql_global_variables_autocommit 1
+# HELP mysql_global_variables_automatic_sp_privileges Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_automatic_sp_privileges gauge
+mysql_global_variables_automatic_sp_privileges 1
+# HELP mysql_global_variables_avoid_temporal_upgrade Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_avoid_temporal_upgrade gauge
+mysql_global_variables_avoid_temporal_upgrade 0
+# HELP mysql_global_variables_back_log Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_back_log gauge
+mysql_global_variables_back_log 80
+# HELP mysql_global_variables_big_tables Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_big_tables gauge
+mysql_global_variables_big_tables 0
+# HELP mysql_global_variables_binlog_cache_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_binlog_cache_size gauge
+mysql_global_variables_binlog_cache_size 32768
+# HELP mysql_global_variables_binlog_direct_non_transactional_updates Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_binlog_direct_non_transactional_updates gauge
+mysql_global_variables_binlog_direct_non_transactional_updates 0
+# HELP mysql_global_variables_binlog_group_commit_sync_delay Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_binlog_group_commit_sync_delay gauge
+mysql_global_variables_binlog_group_commit_sync_delay 0
+# HELP mysql_global_variables_binlog_group_commit_sync_no_delay_count Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_binlog_group_commit_sync_no_delay_count gauge
+mysql_global_variables_binlog_group_commit_sync_no_delay_count 0
+# HELP mysql_global_variables_binlog_gtid_simple_recovery Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_binlog_gtid_simple_recovery gauge
+mysql_global_variables_binlog_gtid_simple_recovery 1
+# HELP mysql_global_variables_binlog_max_flush_queue_time Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_binlog_max_flush_queue_time gauge
+mysql_global_variables_binlog_max_flush_queue_time 0
+# HELP mysql_global_variables_binlog_order_commits Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_binlog_order_commits gauge
+mysql_global_variables_binlog_order_commits 1
+# HELP mysql_global_variables_binlog_rows_query_log_events Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_binlog_rows_query_log_events gauge
+mysql_global_variables_binlog_rows_query_log_events 0
+# HELP mysql_global_variables_binlog_stmt_cache_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_binlog_stmt_cache_size gauge
+mysql_global_variables_binlog_stmt_cache_size 32768
+# HELP mysql_global_variables_binlog_transaction_dependency_history_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_binlog_transaction_dependency_history_size gauge
+mysql_global_variables_binlog_transaction_dependency_history_size 25000
+# HELP mysql_global_variables_bulk_insert_buffer_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_bulk_insert_buffer_size gauge
+mysql_global_variables_bulk_insert_buffer_size 8.388608e+06
+# HELP mysql_global_variables_check_proxy_users Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_check_proxy_users gauge
+mysql_global_variables_check_proxy_users 0
+# HELP mysql_global_variables_connect_timeout Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_connect_timeout gauge
+mysql_global_variables_connect_timeout 10
+# HELP mysql_global_variables_core_file Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_core_file gauge
+mysql_global_variables_core_file 0
+# HELP mysql_global_variables_default_password_lifetime Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_default_password_lifetime gauge
+mysql_global_variables_default_password_lifetime 0
+# HELP mysql_global_variables_default_week_format Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_default_week_format gauge
+mysql_global_variables_default_week_format 0
+# HELP mysql_global_variables_delay_key_write Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_delay_key_write gauge
+mysql_global_variables_delay_key_write 1
+# HELP mysql_global_variables_delayed_insert_limit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_delayed_insert_limit gauge
+mysql_global_variables_delayed_insert_limit 100
+# HELP mysql_global_variables_delayed_insert_timeout Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_delayed_insert_timeout gauge
+mysql_global_variables_delayed_insert_timeout 300
+# HELP mysql_global_variables_delayed_queue_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_delayed_queue_size gauge
+mysql_global_variables_delayed_queue_size 1000
+# HELP mysql_global_variables_disconnect_on_expired_password Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_disconnect_on_expired_password gauge
+mysql_global_variables_disconnect_on_expired_password 1
+# HELP mysql_global_variables_div_precision_increment Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_div_precision_increment gauge
+mysql_global_variables_div_precision_increment 4
+# HELP mysql_global_variables_end_markers_in_json Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_end_markers_in_json gauge
+mysql_global_variables_end_markers_in_json 0
+# HELP mysql_global_variables_enforce_gtid_consistency Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_enforce_gtid_consistency gauge
+mysql_global_variables_enforce_gtid_consistency 0
+# HELP mysql_global_variables_eq_range_index_dive_limit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_eq_range_index_dive_limit gauge
+mysql_global_variables_eq_range_index_dive_limit 200
+# HELP mysql_global_variables_event_scheduler Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_event_scheduler gauge
+mysql_global_variables_event_scheduler 0
+# HELP mysql_global_variables_expire_logs_days Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_expire_logs_days gauge
+mysql_global_variables_expire_logs_days 10
+# HELP mysql_global_variables_explicit_defaults_for_timestamp Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_explicit_defaults_for_timestamp gauge
+mysql_global_variables_explicit_defaults_for_timestamp 0
+# HELP mysql_global_variables_flush Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_flush gauge
+mysql_global_variables_flush 0
+# HELP mysql_global_variables_flush_time Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_flush_time gauge
+mysql_global_variables_flush_time 0
+# HELP mysql_global_variables_foreign_key_checks Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_foreign_key_checks gauge
+mysql_global_variables_foreign_key_checks 1
+# HELP mysql_global_variables_ft_max_word_len Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_ft_max_word_len gauge
+mysql_global_variables_ft_max_word_len 84
+# HELP mysql_global_variables_ft_min_word_len Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_ft_min_word_len gauge
+mysql_global_variables_ft_min_word_len 4
+# HELP mysql_global_variables_ft_query_expansion_limit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_ft_query_expansion_limit gauge
+mysql_global_variables_ft_query_expansion_limit 20
+# HELP mysql_global_variables_general_log Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_general_log gauge
+mysql_global_variables_general_log 0
+# HELP mysql_global_variables_group_concat_max_len Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_group_concat_max_len gauge
+mysql_global_variables_group_concat_max_len 1024
+# HELP mysql_global_variables_gtid_executed_compression_period Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_gtid_executed_compression_period gauge
+mysql_global_variables_gtid_executed_compression_period 1000
+# HELP mysql_global_variables_gtid_mode Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_gtid_mode gauge
+mysql_global_variables_gtid_mode 0
+# HELP mysql_global_variables_host_cache_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_host_cache_size gauge
+mysql_global_variables_host_cache_size 279
+# HELP mysql_global_variables_ignore_builtin_innodb Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_ignore_builtin_innodb gauge
+mysql_global_variables_ignore_builtin_innodb 0
+# HELP mysql_global_variables_innodb_adaptive_flushing Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_adaptive_flushing gauge
+mysql_global_variables_innodb_adaptive_flushing 1
+# HELP mysql_global_variables_innodb_adaptive_flushing_lwm Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_adaptive_flushing_lwm gauge
+mysql_global_variables_innodb_adaptive_flushing_lwm 10
+# HELP mysql_global_variables_innodb_adaptive_hash_index Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_adaptive_hash_index gauge
+mysql_global_variables_innodb_adaptive_hash_index 1
+# HELP mysql_global_variables_innodb_adaptive_hash_index_parts Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_adaptive_hash_index_parts gauge
+mysql_global_variables_innodb_adaptive_hash_index_parts 8
+# HELP mysql_global_variables_innodb_adaptive_max_sleep_delay Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_adaptive_max_sleep_delay gauge
+mysql_global_variables_innodb_adaptive_max_sleep_delay 150000
+# HELP mysql_global_variables_innodb_api_bk_commit_interval Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_api_bk_commit_interval gauge
+mysql_global_variables_innodb_api_bk_commit_interval 5
+# HELP mysql_global_variables_innodb_api_disable_rowlock Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_api_disable_rowlock gauge
+mysql_global_variables_innodb_api_disable_rowlock 0
+# HELP mysql_global_variables_innodb_api_enable_binlog Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_api_enable_binlog gauge
+mysql_global_variables_innodb_api_enable_binlog 0
+# HELP mysql_global_variables_innodb_api_enable_mdl Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_api_enable_mdl gauge
+mysql_global_variables_innodb_api_enable_mdl 0
+# HELP mysql_global_variables_innodb_api_trx_level Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_api_trx_level gauge
+mysql_global_variables_innodb_api_trx_level 0
+# HELP mysql_global_variables_innodb_autoextend_increment Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_autoextend_increment gauge
+mysql_global_variables_innodb_autoextend_increment 64
+# HELP mysql_global_variables_innodb_autoinc_lock_mode Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_autoinc_lock_mode gauge
+mysql_global_variables_innodb_autoinc_lock_mode 1
+# HELP mysql_global_variables_innodb_buffer_pool_chunk_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_buffer_pool_chunk_size gauge
+mysql_global_variables_innodb_buffer_pool_chunk_size 1.34217728e+08
+# HELP mysql_global_variables_innodb_buffer_pool_dump_at_shutdown Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_buffer_pool_dump_at_shutdown gauge
+mysql_global_variables_innodb_buffer_pool_dump_at_shutdown 1
+# HELP mysql_global_variables_innodb_buffer_pool_dump_now Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_buffer_pool_dump_now gauge
+mysql_global_variables_innodb_buffer_pool_dump_now 0
+# HELP mysql_global_variables_innodb_buffer_pool_dump_pct Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_buffer_pool_dump_pct gauge
+mysql_global_variables_innodb_buffer_pool_dump_pct 25
+# HELP mysql_global_variables_innodb_buffer_pool_instances Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_buffer_pool_instances gauge
+mysql_global_variables_innodb_buffer_pool_instances 1
+# HELP mysql_global_variables_innodb_buffer_pool_load_abort Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_buffer_pool_load_abort gauge
+mysql_global_variables_innodb_buffer_pool_load_abort 0
+# HELP mysql_global_variables_innodb_buffer_pool_load_at_startup Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_buffer_pool_load_at_startup gauge
+mysql_global_variables_innodb_buffer_pool_load_at_startup 1
+# HELP mysql_global_variables_innodb_buffer_pool_load_now Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_buffer_pool_load_now gauge
+mysql_global_variables_innodb_buffer_pool_load_now 0
+# HELP mysql_global_variables_innodb_buffer_pool_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_buffer_pool_size gauge
+mysql_global_variables_innodb_buffer_pool_size 1.34217728e+08
+# HELP mysql_global_variables_innodb_change_buffer_max_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_change_buffer_max_size gauge
+mysql_global_variables_innodb_change_buffer_max_size 25
+# HELP mysql_global_variables_innodb_checksums Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_checksums gauge
+mysql_global_variables_innodb_checksums 1
+# HELP mysql_global_variables_innodb_cmp_per_index_enabled Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_cmp_per_index_enabled gauge
+mysql_global_variables_innodb_cmp_per_index_enabled 0
+# HELP mysql_global_variables_innodb_commit_concurrency Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_commit_concurrency gauge
+mysql_global_variables_innodb_commit_concurrency 0
+# HELP mysql_global_variables_innodb_compression_failure_threshold_pct Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_compression_failure_threshold_pct gauge
+mysql_global_variables_innodb_compression_failure_threshold_pct 5
+# HELP mysql_global_variables_innodb_compression_level Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_compression_level gauge
+mysql_global_variables_innodb_compression_level 6
+# HELP mysql_global_variables_innodb_compression_pad_pct_max Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_compression_pad_pct_max gauge
+mysql_global_variables_innodb_compression_pad_pct_max 50
+# HELP mysql_global_variables_innodb_concurrency_tickets Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_concurrency_tickets gauge
+mysql_global_variables_innodb_concurrency_tickets 5000
+# HELP mysql_global_variables_innodb_deadlock_detect Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_deadlock_detect gauge
+mysql_global_variables_innodb_deadlock_detect 1
+# HELP mysql_global_variables_innodb_disable_sort_file_cache Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_disable_sort_file_cache gauge
+mysql_global_variables_innodb_disable_sort_file_cache 0
+# HELP mysql_global_variables_innodb_doublewrite Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_doublewrite gauge
+mysql_global_variables_innodb_doublewrite 1
+# HELP mysql_global_variables_innodb_fast_shutdown Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_fast_shutdown gauge
+mysql_global_variables_innodb_fast_shutdown 1
+# HELP mysql_global_variables_innodb_file_format_check Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_file_format_check gauge
+mysql_global_variables_innodb_file_format_check 1
+# HELP mysql_global_variables_innodb_file_per_table Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_file_per_table gauge
+mysql_global_variables_innodb_file_per_table 1
+# HELP mysql_global_variables_innodb_fill_factor Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_fill_factor gauge
+mysql_global_variables_innodb_fill_factor 100
+# HELP mysql_global_variables_innodb_flush_log_at_timeout Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_flush_log_at_timeout gauge
+mysql_global_variables_innodb_flush_log_at_timeout 1
+# HELP mysql_global_variables_innodb_flush_log_at_trx_commit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_flush_log_at_trx_commit gauge
+mysql_global_variables_innodb_flush_log_at_trx_commit 1
+# HELP mysql_global_variables_innodb_flush_neighbors Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_flush_neighbors gauge
+mysql_global_variables_innodb_flush_neighbors 1
+# HELP mysql_global_variables_innodb_flush_sync Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_flush_sync gauge
+mysql_global_variables_innodb_flush_sync 1
+# HELP mysql_global_variables_innodb_flushing_avg_loops Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_flushing_avg_loops gauge
+mysql_global_variables_innodb_flushing_avg_loops 30
+# HELP mysql_global_variables_innodb_force_load_corrupted Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_force_load_corrupted gauge
+mysql_global_variables_innodb_force_load_corrupted 0
+# HELP mysql_global_variables_innodb_force_recovery Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_force_recovery gauge
+mysql_global_variables_innodb_force_recovery 0
+# HELP mysql_global_variables_innodb_ft_cache_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_ft_cache_size gauge
+mysql_global_variables_innodb_ft_cache_size 8e+06
+# HELP mysql_global_variables_innodb_ft_enable_diag_print Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_ft_enable_diag_print gauge
+mysql_global_variables_innodb_ft_enable_diag_print 0
+# HELP mysql_global_variables_innodb_ft_enable_stopword Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_ft_enable_stopword gauge
+mysql_global_variables_innodb_ft_enable_stopword 1
+# HELP mysql_global_variables_innodb_ft_max_token_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_ft_max_token_size gauge
+mysql_global_variables_innodb_ft_max_token_size 84
+# HELP mysql_global_variables_innodb_ft_min_token_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_ft_min_token_size gauge
+mysql_global_variables_innodb_ft_min_token_size 3
+# HELP mysql_global_variables_innodb_ft_num_word_optimize Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_ft_num_word_optimize gauge
+mysql_global_variables_innodb_ft_num_word_optimize 2000
+# HELP mysql_global_variables_innodb_ft_result_cache_limit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_ft_result_cache_limit gauge
+mysql_global_variables_innodb_ft_result_cache_limit 2e+09
+# HELP mysql_global_variables_innodb_ft_sort_pll_degree Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_ft_sort_pll_degree gauge
+mysql_global_variables_innodb_ft_sort_pll_degree 2
+# HELP mysql_global_variables_innodb_ft_total_cache_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_ft_total_cache_size gauge
+mysql_global_variables_innodb_ft_total_cache_size 6.4e+08
+# HELP mysql_global_variables_innodb_io_capacity Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_io_capacity gauge
+mysql_global_variables_innodb_io_capacity 200
+# HELP mysql_global_variables_innodb_io_capacity_max Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_io_capacity_max gauge
+mysql_global_variables_innodb_io_capacity_max 2000
+# HELP mysql_global_variables_innodb_large_prefix Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_large_prefix gauge
+mysql_global_variables_innodb_large_prefix 1
+# HELP mysql_global_variables_innodb_lock_wait_timeout Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_lock_wait_timeout gauge
+mysql_global_variables_innodb_lock_wait_timeout 50
+# HELP mysql_global_variables_innodb_locks_unsafe_for_binlog Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_locks_unsafe_for_binlog gauge
+mysql_global_variables_innodb_locks_unsafe_for_binlog 0
+# HELP mysql_global_variables_innodb_log_buffer_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_log_buffer_size gauge
+mysql_global_variables_innodb_log_buffer_size 1.6777216e+07
+# HELP mysql_global_variables_innodb_log_checksums Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_log_checksums gauge
+mysql_global_variables_innodb_log_checksums 1
+# HELP mysql_global_variables_innodb_log_compressed_pages Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_log_compressed_pages gauge
+mysql_global_variables_innodb_log_compressed_pages 1
+# HELP mysql_global_variables_innodb_log_file_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_log_file_size gauge
+mysql_global_variables_innodb_log_file_size 5.0331648e+07
+# HELP mysql_global_variables_innodb_log_files_in_group Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_log_files_in_group gauge
+mysql_global_variables_innodb_log_files_in_group 2
+# HELP mysql_global_variables_innodb_log_write_ahead_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_log_write_ahead_size gauge
+mysql_global_variables_innodb_log_write_ahead_size 8192
+# HELP mysql_global_variables_innodb_lru_scan_depth Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_lru_scan_depth gauge
+mysql_global_variables_innodb_lru_scan_depth 1024
+# HELP mysql_global_variables_innodb_max_dirty_pages_pct Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_max_dirty_pages_pct gauge
+mysql_global_variables_innodb_max_dirty_pages_pct 75
+# HELP mysql_global_variables_innodb_max_dirty_pages_pct_lwm Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_max_dirty_pages_pct_lwm gauge
+mysql_global_variables_innodb_max_dirty_pages_pct_lwm 0
+# HELP mysql_global_variables_innodb_max_purge_lag Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_max_purge_lag gauge
+mysql_global_variables_innodb_max_purge_lag 0
+# HELP mysql_global_variables_innodb_max_purge_lag_delay Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_max_purge_lag_delay gauge
+mysql_global_variables_innodb_max_purge_lag_delay 0
+# HELP mysql_global_variables_innodb_max_undo_log_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_max_undo_log_size gauge
+mysql_global_variables_innodb_max_undo_log_size 1.073741824e+09
+# HELP mysql_global_variables_innodb_numa_interleave Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_numa_interleave gauge
+mysql_global_variables_innodb_numa_interleave 0
+# HELP mysql_global_variables_innodb_old_blocks_pct Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_old_blocks_pct gauge
+mysql_global_variables_innodb_old_blocks_pct 37
+# HELP mysql_global_variables_innodb_old_blocks_time Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_old_blocks_time gauge
+mysql_global_variables_innodb_old_blocks_time 1000
+# HELP mysql_global_variables_innodb_online_alter_log_max_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_online_alter_log_max_size gauge
+mysql_global_variables_innodb_online_alter_log_max_size 1.34217728e+08
+# HELP mysql_global_variables_innodb_open_files Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_open_files gauge
+mysql_global_variables_innodb_open_files 431
+# HELP mysql_global_variables_innodb_optimize_fulltext_only Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_optimize_fulltext_only gauge
+mysql_global_variables_innodb_optimize_fulltext_only 0
+# HELP mysql_global_variables_innodb_page_cleaners Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_page_cleaners gauge
+mysql_global_variables_innodb_page_cleaners 1
+# HELP mysql_global_variables_innodb_page_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_page_size gauge
+mysql_global_variables_innodb_page_size 16384
+# HELP mysql_global_variables_innodb_print_all_deadlocks Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_print_all_deadlocks gauge
+mysql_global_variables_innodb_print_all_deadlocks 0
+# HELP mysql_global_variables_innodb_purge_batch_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_purge_batch_size gauge
+mysql_global_variables_innodb_purge_batch_size 300
+# HELP mysql_global_variables_innodb_purge_rseg_truncate_frequency Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_purge_rseg_truncate_frequency gauge
+mysql_global_variables_innodb_purge_rseg_truncate_frequency 128
+# HELP mysql_global_variables_innodb_purge_threads Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_purge_threads gauge
+mysql_global_variables_innodb_purge_threads 4
+# HELP mysql_global_variables_innodb_random_read_ahead Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_random_read_ahead gauge
+mysql_global_variables_innodb_random_read_ahead 0
+# HELP mysql_global_variables_innodb_read_ahead_threshold Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_read_ahead_threshold gauge
+mysql_global_variables_innodb_read_ahead_threshold 56
+# HELP mysql_global_variables_innodb_read_io_threads Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_read_io_threads gauge
+mysql_global_variables_innodb_read_io_threads 4
+# HELP mysql_global_variables_innodb_read_only Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_read_only gauge
+mysql_global_variables_innodb_read_only 0
+# HELP mysql_global_variables_innodb_replication_delay Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_replication_delay gauge
+mysql_global_variables_innodb_replication_delay 0
+# HELP mysql_global_variables_innodb_rollback_on_timeout Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_rollback_on_timeout gauge
+mysql_global_variables_innodb_rollback_on_timeout 0
+# HELP mysql_global_variables_innodb_rollback_segments Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_rollback_segments gauge
+mysql_global_variables_innodb_rollback_segments 128
+# HELP mysql_global_variables_innodb_sort_buffer_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_sort_buffer_size gauge
+mysql_global_variables_innodb_sort_buffer_size 1.048576e+06
+# HELP mysql_global_variables_innodb_spin_wait_delay Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_spin_wait_delay gauge
+mysql_global_variables_innodb_spin_wait_delay 6
+# HELP mysql_global_variables_innodb_stats_auto_recalc Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_stats_auto_recalc gauge
+mysql_global_variables_innodb_stats_auto_recalc 1
+# HELP mysql_global_variables_innodb_stats_include_delete_marked Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_stats_include_delete_marked gauge
+mysql_global_variables_innodb_stats_include_delete_marked 0
+# HELP mysql_global_variables_innodb_stats_on_metadata Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_stats_on_metadata gauge
+mysql_global_variables_innodb_stats_on_metadata 0
+# HELP mysql_global_variables_innodb_stats_persistent Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_stats_persistent gauge
+mysql_global_variables_innodb_stats_persistent 1
+# HELP mysql_global_variables_innodb_stats_persistent_sample_pages Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_stats_persistent_sample_pages gauge
+mysql_global_variables_innodb_stats_persistent_sample_pages 20
+# HELP mysql_global_variables_innodb_stats_sample_pages Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_stats_sample_pages gauge
+mysql_global_variables_innodb_stats_sample_pages 8
+# HELP mysql_global_variables_innodb_stats_transient_sample_pages Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_stats_transient_sample_pages gauge
+mysql_global_variables_innodb_stats_transient_sample_pages 8
+# HELP mysql_global_variables_innodb_status_output Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_status_output gauge
+mysql_global_variables_innodb_status_output 0
+# HELP mysql_global_variables_innodb_status_output_locks Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_status_output_locks gauge
+mysql_global_variables_innodb_status_output_locks 0
+# HELP mysql_global_variables_innodb_strict_mode Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_strict_mode gauge
+mysql_global_variables_innodb_strict_mode 1
+# HELP mysql_global_variables_innodb_support_xa Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_support_xa gauge
+mysql_global_variables_innodb_support_xa 1
+# HELP mysql_global_variables_innodb_sync_array_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_sync_array_size gauge
+mysql_global_variables_innodb_sync_array_size 1
+# HELP mysql_global_variables_innodb_sync_spin_loops Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_sync_spin_loops gauge
+mysql_global_variables_innodb_sync_spin_loops 30
+# HELP mysql_global_variables_innodb_table_locks Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_table_locks gauge
+mysql_global_variables_innodb_table_locks 1
+# HELP mysql_global_variables_innodb_thread_concurrency Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_thread_concurrency gauge
+mysql_global_variables_innodb_thread_concurrency 0
+# HELP mysql_global_variables_innodb_thread_sleep_delay Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_thread_sleep_delay gauge
+mysql_global_variables_innodb_thread_sleep_delay 10000
+# HELP mysql_global_variables_innodb_undo_log_truncate Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_undo_log_truncate gauge
+mysql_global_variables_innodb_undo_log_truncate 0
+# HELP mysql_global_variables_innodb_undo_logs Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_undo_logs gauge
+mysql_global_variables_innodb_undo_logs 128
+# HELP mysql_global_variables_innodb_undo_tablespaces Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_undo_tablespaces gauge
+mysql_global_variables_innodb_undo_tablespaces 0
+# HELP mysql_global_variables_innodb_use_native_aio Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_use_native_aio gauge
+mysql_global_variables_innodb_use_native_aio 1
+# HELP mysql_global_variables_innodb_write_io_threads Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_innodb_write_io_threads gauge
+mysql_global_variables_innodb_write_io_threads 4
+# HELP mysql_global_variables_interactive_timeout Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_interactive_timeout gauge
+mysql_global_variables_interactive_timeout 28800
+# HELP mysql_global_variables_join_buffer_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_join_buffer_size gauge
+mysql_global_variables_join_buffer_size 262144
+# HELP mysql_global_variables_keep_files_on_create Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_keep_files_on_create gauge
+mysql_global_variables_keep_files_on_create 0
+# HELP mysql_global_variables_key_buffer_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_key_buffer_size gauge
+mysql_global_variables_key_buffer_size 1.6777216e+07
+# HELP mysql_global_variables_key_cache_age_threshold Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_key_cache_age_threshold gauge
+mysql_global_variables_key_cache_age_threshold 300
+# HELP mysql_global_variables_key_cache_block_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_key_cache_block_size gauge
+mysql_global_variables_key_cache_block_size 1024
+# HELP mysql_global_variables_key_cache_division_limit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_key_cache_division_limit gauge
+mysql_global_variables_key_cache_division_limit 100
+# HELP mysql_global_variables_keyring_operations Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_keyring_operations gauge
+mysql_global_variables_keyring_operations 1
+# HELP mysql_global_variables_large_files_support Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_large_files_support gauge
+mysql_global_variables_large_files_support 1
+# HELP mysql_global_variables_large_page_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_large_page_size gauge
+mysql_global_variables_large_page_size 0
+# HELP mysql_global_variables_large_pages Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_large_pages gauge
+mysql_global_variables_large_pages 0
+# HELP mysql_global_variables_local_infile Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_local_infile gauge
+mysql_global_variables_local_infile 1
+# HELP mysql_global_variables_lock_wait_timeout Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_lock_wait_timeout gauge
+mysql_global_variables_lock_wait_timeout 3.1536e+07
+# HELP mysql_global_variables_locked_in_memory Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_locked_in_memory gauge
+mysql_global_variables_locked_in_memory 0
+# HELP mysql_global_variables_log_bin Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_bin gauge
+mysql_global_variables_log_bin 0
+# HELP mysql_global_variables_log_bin_trust_function_creators Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_bin_trust_function_creators gauge
+mysql_global_variables_log_bin_trust_function_creators 0
+# HELP mysql_global_variables_log_bin_use_v1_row_events Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_bin_use_v1_row_events gauge
+mysql_global_variables_log_bin_use_v1_row_events 0
+# HELP mysql_global_variables_log_builtin_as_identified_by_password Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_builtin_as_identified_by_password gauge
+mysql_global_variables_log_builtin_as_identified_by_password 0
+# HELP mysql_global_variables_log_error_verbosity Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_error_verbosity gauge
+mysql_global_variables_log_error_verbosity 3
+# HELP mysql_global_variables_log_queries_not_using_indexes Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_queries_not_using_indexes gauge
+mysql_global_variables_log_queries_not_using_indexes 0
+# HELP mysql_global_variables_log_slave_updates Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_slave_updates gauge
+mysql_global_variables_log_slave_updates 0
+# HELP mysql_global_variables_log_slow_admin_statements Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_slow_admin_statements gauge
+mysql_global_variables_log_slow_admin_statements 0
+# HELP mysql_global_variables_log_slow_slave_statements Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_slow_slave_statements gauge
+mysql_global_variables_log_slow_slave_statements 0
+# HELP mysql_global_variables_log_statements_unsafe_for_binlog Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_statements_unsafe_for_binlog gauge
+mysql_global_variables_log_statements_unsafe_for_binlog 1
+# HELP mysql_global_variables_log_syslog Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_syslog gauge
+mysql_global_variables_log_syslog 0
+# HELP mysql_global_variables_log_syslog_include_pid Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_syslog_include_pid gauge
+mysql_global_variables_log_syslog_include_pid 1
+# HELP mysql_global_variables_log_throttle_queries_not_using_indexes Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_throttle_queries_not_using_indexes gauge
+mysql_global_variables_log_throttle_queries_not_using_indexes 0
+# HELP mysql_global_variables_log_warnings Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_log_warnings gauge
+mysql_global_variables_log_warnings 2
+# HELP mysql_global_variables_long_query_time Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_long_query_time gauge
+mysql_global_variables_long_query_time 10
+# HELP mysql_global_variables_low_priority_updates Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_low_priority_updates gauge
+mysql_global_variables_low_priority_updates 0
+# HELP mysql_global_variables_lower_case_file_system Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_lower_case_file_system gauge
+mysql_global_variables_lower_case_file_system 0
+# HELP mysql_global_variables_lower_case_table_names Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_lower_case_table_names gauge
+mysql_global_variables_lower_case_table_names 0
+# HELP mysql_global_variables_master_verify_checksum Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_master_verify_checksum gauge
+mysql_global_variables_master_verify_checksum 0
+# HELP mysql_global_variables_max_allowed_packet Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_allowed_packet gauge
+mysql_global_variables_max_allowed_packet 1.6777216e+07
+# HELP mysql_global_variables_max_binlog_cache_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_binlog_cache_size gauge
+mysql_global_variables_max_binlog_cache_size 1.8446744073709548e+19
+# HELP mysql_global_variables_max_binlog_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_binlog_size gauge
+mysql_global_variables_max_binlog_size 1.048576e+08
+# HELP mysql_global_variables_max_binlog_stmt_cache_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_binlog_stmt_cache_size gauge
+mysql_global_variables_max_binlog_stmt_cache_size 1.8446744073709548e+19
+# HELP mysql_global_variables_max_connect_errors Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_connect_errors gauge
+mysql_global_variables_max_connect_errors 100
+# HELP mysql_global_variables_max_connections Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_connections gauge
+mysql_global_variables_max_connections 151
+# HELP mysql_global_variables_max_delayed_threads Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_delayed_threads gauge
+mysql_global_variables_max_delayed_threads 20
+# HELP mysql_global_variables_max_digest_length Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_digest_length gauge
+mysql_global_variables_max_digest_length 1024
+# HELP mysql_global_variables_max_error_count Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_error_count gauge
+mysql_global_variables_max_error_count 64
+# HELP mysql_global_variables_max_execution_time Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_execution_time gauge
+mysql_global_variables_max_execution_time 0
+# HELP mysql_global_variables_max_heap_table_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_heap_table_size gauge
+mysql_global_variables_max_heap_table_size 1.6777216e+07
+# HELP mysql_global_variables_max_insert_delayed_threads Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_insert_delayed_threads gauge
+mysql_global_variables_max_insert_delayed_threads 20
+# HELP mysql_global_variables_max_join_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_join_size gauge
+mysql_global_variables_max_join_size 1.8446744073709552e+19
+# HELP mysql_global_variables_max_length_for_sort_data Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_length_for_sort_data gauge
+mysql_global_variables_max_length_for_sort_data 1024
+# HELP mysql_global_variables_max_points_in_geometry Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_points_in_geometry gauge
+mysql_global_variables_max_points_in_geometry 65536
+# HELP mysql_global_variables_max_prepared_stmt_count Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_prepared_stmt_count gauge
+mysql_global_variables_max_prepared_stmt_count 16382
+# HELP mysql_global_variables_max_relay_log_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_relay_log_size gauge
+mysql_global_variables_max_relay_log_size 0
+# HELP mysql_global_variables_max_seeks_for_key Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_seeks_for_key gauge
+mysql_global_variables_max_seeks_for_key 1.8446744073709552e+19
+# HELP mysql_global_variables_max_sort_length Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_sort_length gauge
+mysql_global_variables_max_sort_length 1024
+# HELP mysql_global_variables_max_sp_recursion_depth Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_sp_recursion_depth gauge
+mysql_global_variables_max_sp_recursion_depth 0
+# HELP mysql_global_variables_max_tmp_tables Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_tmp_tables gauge
+mysql_global_variables_max_tmp_tables 32
+# HELP mysql_global_variables_max_user_connections Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_user_connections gauge
+mysql_global_variables_max_user_connections 0
+# HELP mysql_global_variables_max_write_lock_count Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_max_write_lock_count gauge
+mysql_global_variables_max_write_lock_count 1.8446744073709552e+19
+# HELP mysql_global_variables_metadata_locks_cache_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_metadata_locks_cache_size gauge
+mysql_global_variables_metadata_locks_cache_size 1024
+# HELP mysql_global_variables_metadata_locks_hash_instances Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_metadata_locks_hash_instances gauge
+mysql_global_variables_metadata_locks_hash_instances 8
+# HELP mysql_global_variables_min_examined_row_limit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_min_examined_row_limit gauge
+mysql_global_variables_min_examined_row_limit 0
+# HELP mysql_global_variables_multi_range_count Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_multi_range_count gauge
+mysql_global_variables_multi_range_count 256
+# HELP mysql_global_variables_myisam_data_pointer_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_myisam_data_pointer_size gauge
+mysql_global_variables_myisam_data_pointer_size 6
+# HELP mysql_global_variables_myisam_max_sort_file_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_myisam_max_sort_file_size gauge
+mysql_global_variables_myisam_max_sort_file_size 9.223372036853727e+18
+# HELP mysql_global_variables_myisam_mmap_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_myisam_mmap_size gauge
+mysql_global_variables_myisam_mmap_size 1.8446744073709552e+19
+# HELP mysql_global_variables_myisam_repair_threads Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_myisam_repair_threads gauge
+mysql_global_variables_myisam_repair_threads 1
+# HELP mysql_global_variables_myisam_sort_buffer_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_myisam_sort_buffer_size gauge
+mysql_global_variables_myisam_sort_buffer_size 8.388608e+06
+# HELP mysql_global_variables_myisam_use_mmap Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_myisam_use_mmap gauge
+mysql_global_variables_myisam_use_mmap 0
+# HELP mysql_global_variables_mysql_native_password_proxy_users Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_mysql_native_password_proxy_users gauge
+mysql_global_variables_mysql_native_password_proxy_users 0
+# HELP mysql_global_variables_net_buffer_length Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_net_buffer_length gauge
+mysql_global_variables_net_buffer_length 16384
+# HELP mysql_global_variables_net_read_timeout Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_net_read_timeout gauge
+mysql_global_variables_net_read_timeout 30
+# HELP mysql_global_variables_net_retry_count Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_net_retry_count gauge
+mysql_global_variables_net_retry_count 10
+# HELP mysql_global_variables_net_write_timeout Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_net_write_timeout gauge
+mysql_global_variables_net_write_timeout 60
+# HELP mysql_global_variables_new Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_new gauge
+mysql_global_variables_new 0
+# HELP mysql_global_variables_ngram_token_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_ngram_token_size gauge
+mysql_global_variables_ngram_token_size 2
+# HELP mysql_global_variables_offline_mode Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_offline_mode gauge
+mysql_global_variables_offline_mode 0
+# HELP mysql_global_variables_old Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_old gauge
+mysql_global_variables_old 0
+# HELP mysql_global_variables_old_alter_table Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_old_alter_table gauge
+mysql_global_variables_old_alter_table 0
+# HELP mysql_global_variables_old_passwords Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_old_passwords gauge
+mysql_global_variables_old_passwords 0
+# HELP mysql_global_variables_open_files_limit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_open_files_limit gauge
+mysql_global_variables_open_files_limit 1024
+# HELP mysql_global_variables_optimizer_prune_level Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_optimizer_prune_level gauge
+mysql_global_variables_optimizer_prune_level 1
+# HELP mysql_global_variables_optimizer_search_depth Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_optimizer_search_depth gauge
+mysql_global_variables_optimizer_search_depth 62
+# HELP mysql_global_variables_optimizer_trace_limit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_optimizer_trace_limit gauge
+mysql_global_variables_optimizer_trace_limit 1
+# HELP mysql_global_variables_optimizer_trace_max_mem_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_optimizer_trace_max_mem_size gauge
+mysql_global_variables_optimizer_trace_max_mem_size 16384
+# HELP mysql_global_variables_optimizer_trace_offset Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_optimizer_trace_offset gauge
+mysql_global_variables_optimizer_trace_offset -1
+# HELP mysql_global_variables_parser_max_mem_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_parser_max_mem_size gauge
+mysql_global_variables_parser_max_mem_size 1.8446744073709552e+19
+# HELP mysql_global_variables_performance_schema Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema gauge
+mysql_global_variables_performance_schema 1
+# HELP mysql_global_variables_performance_schema_accounts_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_accounts_size gauge
+mysql_global_variables_performance_schema_accounts_size -1
+# HELP mysql_global_variables_performance_schema_digests_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_digests_size gauge
+mysql_global_variables_performance_schema_digests_size 5000
+# HELP mysql_global_variables_performance_schema_events_stages_history_long_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_events_stages_history_long_size gauge
+mysql_global_variables_performance_schema_events_stages_history_long_size 1000
+# HELP mysql_global_variables_performance_schema_events_stages_history_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_events_stages_history_size gauge
+mysql_global_variables_performance_schema_events_stages_history_size 10
+# HELP mysql_global_variables_performance_schema_events_statements_history_long_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_events_statements_history_long_size gauge
+mysql_global_variables_performance_schema_events_statements_history_long_size 1000
+# HELP mysql_global_variables_performance_schema_events_statements_history_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_events_statements_history_size gauge
+mysql_global_variables_performance_schema_events_statements_history_size 10
+# HELP mysql_global_variables_performance_schema_events_transactions_history_long_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_events_transactions_history_long_size gauge
+mysql_global_variables_performance_schema_events_transactions_history_long_size 1000
+# HELP mysql_global_variables_performance_schema_events_transactions_history_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_events_transactions_history_size gauge
+mysql_global_variables_performance_schema_events_transactions_history_size 10
+# HELP mysql_global_variables_performance_schema_events_waits_history_long_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_events_waits_history_long_size gauge
+mysql_global_variables_performance_schema_events_waits_history_long_size 1000
+# HELP mysql_global_variables_performance_schema_events_waits_history_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_events_waits_history_size gauge
+mysql_global_variables_performance_schema_events_waits_history_size 10
+# HELP mysql_global_variables_performance_schema_hosts_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_hosts_size gauge
+mysql_global_variables_performance_schema_hosts_size -1
+# HELP mysql_global_variables_performance_schema_max_cond_classes Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_cond_classes gauge
+mysql_global_variables_performance_schema_max_cond_classes 80
+# HELP mysql_global_variables_performance_schema_max_cond_instances Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_cond_instances gauge
+mysql_global_variables_performance_schema_max_cond_instances -1
+# HELP mysql_global_variables_performance_schema_max_digest_length Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_digest_length gauge
+mysql_global_variables_performance_schema_max_digest_length 1024
+# HELP mysql_global_variables_performance_schema_max_file_classes Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_file_classes gauge
+mysql_global_variables_performance_schema_max_file_classes 80
+# HELP mysql_global_variables_performance_schema_max_file_handles Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_file_handles gauge
+mysql_global_variables_performance_schema_max_file_handles 32768
+# HELP mysql_global_variables_performance_schema_max_file_instances Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_file_instances gauge
+mysql_global_variables_performance_schema_max_file_instances -1
+# HELP mysql_global_variables_performance_schema_max_index_stat Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_index_stat gauge
+mysql_global_variables_performance_schema_max_index_stat -1
+# HELP mysql_global_variables_performance_schema_max_memory_classes Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_memory_classes gauge
+mysql_global_variables_performance_schema_max_memory_classes 320
+# HELP mysql_global_variables_performance_schema_max_metadata_locks Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_metadata_locks gauge
+mysql_global_variables_performance_schema_max_metadata_locks -1
+# HELP mysql_global_variables_performance_schema_max_mutex_classes Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_mutex_classes gauge
+mysql_global_variables_performance_schema_max_mutex_classes 210
+# HELP mysql_global_variables_performance_schema_max_mutex_instances Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_mutex_instances gauge
+mysql_global_variables_performance_schema_max_mutex_instances -1
+# HELP mysql_global_variables_performance_schema_max_prepared_statements_instances Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_prepared_statements_instances gauge
+mysql_global_variables_performance_schema_max_prepared_statements_instances -1
+# HELP mysql_global_variables_performance_schema_max_program_instances Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_program_instances gauge
+mysql_global_variables_performance_schema_max_program_instances -1
+# HELP mysql_global_variables_performance_schema_max_rwlock_classes Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_rwlock_classes gauge
+mysql_global_variables_performance_schema_max_rwlock_classes 50
+# HELP mysql_global_variables_performance_schema_max_rwlock_instances Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_rwlock_instances gauge
+mysql_global_variables_performance_schema_max_rwlock_instances -1
+# HELP mysql_global_variables_performance_schema_max_socket_classes Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_socket_classes gauge
+mysql_global_variables_performance_schema_max_socket_classes 10
+# HELP mysql_global_variables_performance_schema_max_socket_instances Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_socket_instances gauge
+mysql_global_variables_performance_schema_max_socket_instances -1
+# HELP mysql_global_variables_performance_schema_max_sql_text_length Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_sql_text_length gauge
+mysql_global_variables_performance_schema_max_sql_text_length 1024
+# HELP mysql_global_variables_performance_schema_max_stage_classes Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_stage_classes gauge
+mysql_global_variables_performance_schema_max_stage_classes 150
+# HELP mysql_global_variables_performance_schema_max_statement_classes Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_statement_classes gauge
+mysql_global_variables_performance_schema_max_statement_classes 193
+# HELP mysql_global_variables_performance_schema_max_statement_stack Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_statement_stack gauge
+mysql_global_variables_performance_schema_max_statement_stack 10
+# HELP mysql_global_variables_performance_schema_max_table_handles Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_table_handles gauge
+mysql_global_variables_performance_schema_max_table_handles -1
+# HELP mysql_global_variables_performance_schema_max_table_instances Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_table_instances gauge
+mysql_global_variables_performance_schema_max_table_instances -1
+# HELP mysql_global_variables_performance_schema_max_table_lock_stat Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_table_lock_stat gauge
+mysql_global_variables_performance_schema_max_table_lock_stat -1
+# HELP mysql_global_variables_performance_schema_max_thread_classes Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_thread_classes gauge
+mysql_global_variables_performance_schema_max_thread_classes 50
+# HELP mysql_global_variables_performance_schema_max_thread_instances Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_max_thread_instances gauge
+mysql_global_variables_performance_schema_max_thread_instances -1
+# HELP mysql_global_variables_performance_schema_session_connect_attrs_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_session_connect_attrs_size gauge
+mysql_global_variables_performance_schema_session_connect_attrs_size 512
+# HELP mysql_global_variables_performance_schema_setup_actors_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_setup_actors_size gauge
+mysql_global_variables_performance_schema_setup_actors_size -1
+# HELP mysql_global_variables_performance_schema_setup_objects_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_setup_objects_size gauge
+mysql_global_variables_performance_schema_setup_objects_size -1
+# HELP mysql_global_variables_performance_schema_users_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_performance_schema_users_size gauge
+mysql_global_variables_performance_schema_users_size -1
+# HELP mysql_global_variables_port Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_port gauge
+mysql_global_variables_port 3306
+# HELP mysql_global_variables_preload_buffer_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_preload_buffer_size gauge
+mysql_global_variables_preload_buffer_size 32768
+# HELP mysql_global_variables_profiling Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_profiling gauge
+mysql_global_variables_profiling 0
+# HELP mysql_global_variables_profiling_history_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_profiling_history_size gauge
+mysql_global_variables_profiling_history_size 15
+# HELP mysql_global_variables_protocol_version Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_protocol_version gauge
+mysql_global_variables_protocol_version 10
+# HELP mysql_global_variables_query_alloc_block_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_query_alloc_block_size gauge
+mysql_global_variables_query_alloc_block_size 8192
+# HELP mysql_global_variables_query_cache_limit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_query_cache_limit gauge
+mysql_global_variables_query_cache_limit 1.048576e+06
+# HELP mysql_global_variables_query_cache_min_res_unit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_query_cache_min_res_unit gauge
+mysql_global_variables_query_cache_min_res_unit 4096
+# HELP mysql_global_variables_query_cache_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_query_cache_size gauge
+mysql_global_variables_query_cache_size 1.6777216e+07
+# HELP mysql_global_variables_query_cache_type Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_query_cache_type gauge
+mysql_global_variables_query_cache_type 0
+# HELP mysql_global_variables_query_cache_wlock_invalidate Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_query_cache_wlock_invalidate gauge
+mysql_global_variables_query_cache_wlock_invalidate 0
+# HELP mysql_global_variables_query_prealloc_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_query_prealloc_size gauge
+mysql_global_variables_query_prealloc_size 8192
+# HELP mysql_global_variables_range_alloc_block_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_range_alloc_block_size gauge
+mysql_global_variables_range_alloc_block_size 4096
+# HELP mysql_global_variables_range_optimizer_max_mem_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_range_optimizer_max_mem_size gauge
+mysql_global_variables_range_optimizer_max_mem_size 8.388608e+06
+# HELP mysql_global_variables_read_buffer_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_read_buffer_size gauge
+mysql_global_variables_read_buffer_size 131072
+# HELP mysql_global_variables_read_only Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_read_only gauge
+mysql_global_variables_read_only 0
+# HELP mysql_global_variables_read_rnd_buffer_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_read_rnd_buffer_size gauge
+mysql_global_variables_read_rnd_buffer_size 262144
+# HELP mysql_global_variables_relay_log_purge Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_relay_log_purge gauge
+mysql_global_variables_relay_log_purge 1
+# HELP mysql_global_variables_relay_log_recovery Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_relay_log_recovery gauge
+mysql_global_variables_relay_log_recovery 0
+# HELP mysql_global_variables_relay_log_space_limit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_relay_log_space_limit gauge
+mysql_global_variables_relay_log_space_limit 0
+# HELP mysql_global_variables_report_port Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_report_port gauge
+mysql_global_variables_report_port 3306
+# HELP mysql_global_variables_require_secure_transport Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_require_secure_transport gauge
+mysql_global_variables_require_secure_transport 0
+# HELP mysql_global_variables_rpl_stop_slave_timeout Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_rpl_stop_slave_timeout gauge
+mysql_global_variables_rpl_stop_slave_timeout 3.1536e+07
+# HELP mysql_global_variables_secure_auth Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_secure_auth gauge
+mysql_global_variables_secure_auth 1
+# HELP mysql_global_variables_server_id Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_server_id gauge
+mysql_global_variables_server_id 0
+# HELP mysql_global_variables_server_id_bits Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_server_id_bits gauge
+mysql_global_variables_server_id_bits 32
+# HELP mysql_global_variables_session_track_gtids Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_session_track_gtids gauge
+mysql_global_variables_session_track_gtids 0
+# HELP mysql_global_variables_session_track_schema Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_session_track_schema gauge
+mysql_global_variables_session_track_schema 1
+# HELP mysql_global_variables_session_track_state_change Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_session_track_state_change gauge
+mysql_global_variables_session_track_state_change 0
+# HELP mysql_global_variables_session_track_transaction_info Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_session_track_transaction_info gauge
+mysql_global_variables_session_track_transaction_info 0
+# HELP mysql_global_variables_sha256_password_proxy_users Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sha256_password_proxy_users gauge
+mysql_global_variables_sha256_password_proxy_users 0
+# HELP mysql_global_variables_show_compatibility_56 Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_show_compatibility_56 gauge
+mysql_global_variables_show_compatibility_56 0
+# HELP mysql_global_variables_show_create_table_verbosity Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_show_create_table_verbosity gauge
+mysql_global_variables_show_create_table_verbosity 0
+# HELP mysql_global_variables_show_old_temporals Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_show_old_temporals gauge
+mysql_global_variables_show_old_temporals 0
+# HELP mysql_global_variables_skip_external_locking Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_skip_external_locking gauge
+mysql_global_variables_skip_external_locking 1
+# HELP mysql_global_variables_skip_name_resolve Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_skip_name_resolve gauge
+mysql_global_variables_skip_name_resolve 0
+# HELP mysql_global_variables_skip_networking Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_skip_networking gauge
+mysql_global_variables_skip_networking 0
+# HELP mysql_global_variables_skip_show_database Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_skip_show_database gauge
+mysql_global_variables_skip_show_database 0
+# HELP mysql_global_variables_slave_allow_batching Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slave_allow_batching gauge
+mysql_global_variables_slave_allow_batching 0
+# HELP mysql_global_variables_slave_checkpoint_group Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slave_checkpoint_group gauge
+mysql_global_variables_slave_checkpoint_group 512
+# HELP mysql_global_variables_slave_checkpoint_period Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slave_checkpoint_period gauge
+mysql_global_variables_slave_checkpoint_period 300
+# HELP mysql_global_variables_slave_compressed_protocol Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slave_compressed_protocol gauge
+mysql_global_variables_slave_compressed_protocol 0
+# HELP mysql_global_variables_slave_max_allowed_packet Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slave_max_allowed_packet gauge
+mysql_global_variables_slave_max_allowed_packet 1.073741824e+09
+# HELP mysql_global_variables_slave_net_timeout Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slave_net_timeout gauge
+mysql_global_variables_slave_net_timeout 60
+# HELP mysql_global_variables_slave_parallel_workers Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slave_parallel_workers gauge
+mysql_global_variables_slave_parallel_workers 0
+# HELP mysql_global_variables_slave_pending_jobs_size_max Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slave_pending_jobs_size_max gauge
+mysql_global_variables_slave_pending_jobs_size_max 1.6777216e+07
+# HELP mysql_global_variables_slave_preserve_commit_order Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slave_preserve_commit_order gauge
+mysql_global_variables_slave_preserve_commit_order 0
+# HELP mysql_global_variables_slave_skip_errors Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slave_skip_errors gauge
+mysql_global_variables_slave_skip_errors 0
+# HELP mysql_global_variables_slave_sql_verify_checksum Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slave_sql_verify_checksum gauge
+mysql_global_variables_slave_sql_verify_checksum 1
+# HELP mysql_global_variables_slave_transaction_retries Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slave_transaction_retries gauge
+mysql_global_variables_slave_transaction_retries 10
+# HELP mysql_global_variables_slow_launch_time Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slow_launch_time gauge
+mysql_global_variables_slow_launch_time 2
+# HELP mysql_global_variables_slow_query_log Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_slow_query_log gauge
+mysql_global_variables_slow_query_log 0
+# HELP mysql_global_variables_sort_buffer_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sort_buffer_size gauge
+mysql_global_variables_sort_buffer_size 262144
+# HELP mysql_global_variables_sql_auto_is_null Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sql_auto_is_null gauge
+mysql_global_variables_sql_auto_is_null 0
+# HELP mysql_global_variables_sql_big_selects Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sql_big_selects gauge
+mysql_global_variables_sql_big_selects 1
+# HELP mysql_global_variables_sql_buffer_result Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sql_buffer_result gauge
+mysql_global_variables_sql_buffer_result 0
+# HELP mysql_global_variables_sql_log_off Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sql_log_off gauge
+mysql_global_variables_sql_log_off 0
+# HELP mysql_global_variables_sql_notes Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sql_notes gauge
+mysql_global_variables_sql_notes 1
+# HELP mysql_global_variables_sql_quote_show_create Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sql_quote_show_create gauge
+mysql_global_variables_sql_quote_show_create 1
+# HELP mysql_global_variables_sql_safe_updates Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sql_safe_updates gauge
+mysql_global_variables_sql_safe_updates 0
+# HELP mysql_global_variables_sql_select_limit Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sql_select_limit gauge
+mysql_global_variables_sql_select_limit 1.8446744073709552e+19
+# HELP mysql_global_variables_sql_slave_skip_counter Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sql_slave_skip_counter gauge
+mysql_global_variables_sql_slave_skip_counter 0
+# HELP mysql_global_variables_sql_warnings Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sql_warnings gauge
+mysql_global_variables_sql_warnings 0
+# HELP mysql_global_variables_stored_program_cache Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_stored_program_cache gauge
+mysql_global_variables_stored_program_cache 256
+# HELP mysql_global_variables_super_read_only Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_super_read_only gauge
+mysql_global_variables_super_read_only 0
+# HELP mysql_global_variables_sync_binlog Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sync_binlog gauge
+mysql_global_variables_sync_binlog 1
+# HELP mysql_global_variables_sync_frm Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sync_frm gauge
+mysql_global_variables_sync_frm 1
+# HELP mysql_global_variables_sync_master_info Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sync_master_info gauge
+mysql_global_variables_sync_master_info 10000
+# HELP mysql_global_variables_sync_relay_log Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sync_relay_log gauge
+mysql_global_variables_sync_relay_log 10000
+# HELP mysql_global_variables_sync_relay_log_info Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_sync_relay_log_info gauge
+mysql_global_variables_sync_relay_log_info 10000
+# HELP mysql_global_variables_table_definition_cache Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_table_definition_cache gauge
+mysql_global_variables_table_definition_cache 615
+# HELP mysql_global_variables_table_open_cache Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_table_open_cache gauge
+mysql_global_variables_table_open_cache 431
+# HELP mysql_global_variables_table_open_cache_instances Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_table_open_cache_instances gauge
+mysql_global_variables_table_open_cache_instances 16
+# HELP mysql_global_variables_thread_cache_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_thread_cache_size gauge
+mysql_global_variables_thread_cache_size 8
+# HELP mysql_global_variables_thread_stack Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_thread_stack gauge
+mysql_global_variables_thread_stack 196608
+# HELP mysql_global_variables_tmp_table_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_tmp_table_size gauge
+mysql_global_variables_tmp_table_size 1.6777216e+07
+# HELP mysql_global_variables_transaction_alloc_block_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_transaction_alloc_block_size gauge
+mysql_global_variables_transaction_alloc_block_size 8192
+# HELP mysql_global_variables_transaction_prealloc_size Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_transaction_prealloc_size gauge
+mysql_global_variables_transaction_prealloc_size 4096
+# HELP mysql_global_variables_transaction_read_only Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_transaction_read_only gauge
+mysql_global_variables_transaction_read_only 0
+# HELP mysql_global_variables_transaction_write_set_extraction Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_transaction_write_set_extraction gauge
+mysql_global_variables_transaction_write_set_extraction 0
+# HELP mysql_global_variables_tx_read_only Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_tx_read_only gauge
+mysql_global_variables_tx_read_only 0
+# HELP mysql_global_variables_unique_checks Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_unique_checks gauge
+mysql_global_variables_unique_checks 1
+# HELP mysql_global_variables_validate_password_check_user_name Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_validate_password_check_user_name gauge
+mysql_global_variables_validate_password_check_user_name 0
+# HELP mysql_global_variables_validate_password_length Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_validate_password_length gauge
+mysql_global_variables_validate_password_length 8
+# HELP mysql_global_variables_validate_password_mixed_case_count Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_validate_password_mixed_case_count gauge
+mysql_global_variables_validate_password_mixed_case_count 1
+# HELP mysql_global_variables_validate_password_number_count Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_validate_password_number_count gauge
+mysql_global_variables_validate_password_number_count 1
+# HELP mysql_global_variables_validate_password_special_char_count Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_validate_password_special_char_count gauge
+mysql_global_variables_validate_password_special_char_count 1
+# HELP mysql_global_variables_wait_timeout Generic gauge metric from SHOW GLOBAL VARIABLES.
+# TYPE mysql_global_variables_wait_timeout gauge
+mysql_global_variables_wait_timeout 28800
+# HELP mysql_info_schema_auto_increment_column The current value of an auto_increment column from information_schema.
+# TYPE mysql_info_schema_auto_increment_column gauge
+mysql_info_schema_auto_increment_column{column="Time_zone_id",schema="mysql",table="time_zone"} 1
+# HELP mysql_info_schema_auto_increment_column_max The max value of an auto_increment column from information_schema.
+# TYPE mysql_info_schema_auto_increment_column_max gauge
+mysql_info_schema_auto_increment_column_max{column="Time_zone_id",schema="mysql",table="time_zone"} 4.294967295e+09
+# HELP mysql_info_schema_table_rows The estimated number of rows in the table from information_schema.tables
+# TYPE mysql_info_schema_table_rows gauge
+mysql_info_schema_table_rows{schema="books",table="authors"} 2
+mysql_info_schema_table_rows{schema="sys",table="host_summary"} 0
+mysql_info_schema_table_rows{schema="sys",table="host_summary_by_file_io"} 0
+mysql_info_schema_table_rows{schema="sys",table="host_summary_by_file_io_type"} 0
+mysql_info_schema_table_rows{schema="sys",table="host_summary_by_stages"} 0
+mysql_info_schema_table_rows{schema="sys",table="host_summary_by_statement_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="host_summary_by_statement_type"} 0
+mysql_info_schema_table_rows{schema="sys",table="innodb_buffer_stats_by_schema"} 0
+mysql_info_schema_table_rows{schema="sys",table="innodb_buffer_stats_by_table"} 0
+mysql_info_schema_table_rows{schema="sys",table="innodb_lock_waits"} 0
+mysql_info_schema_table_rows{schema="sys",table="io_by_thread_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="io_global_by_file_by_bytes"} 0
+mysql_info_schema_table_rows{schema="sys",table="io_global_by_file_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="io_global_by_wait_by_bytes"} 0
+mysql_info_schema_table_rows{schema="sys",table="io_global_by_wait_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="latest_file_io"} 0
+mysql_info_schema_table_rows{schema="sys",table="memory_by_host_by_current_bytes"} 0
+mysql_info_schema_table_rows{schema="sys",table="memory_by_thread_by_current_bytes"} 0
+mysql_info_schema_table_rows{schema="sys",table="memory_by_user_by_current_bytes"} 0
+mysql_info_schema_table_rows{schema="sys",table="memory_global_by_current_bytes"} 0
+mysql_info_schema_table_rows{schema="sys",table="memory_global_total"} 0
+mysql_info_schema_table_rows{schema="sys",table="metrics"} 0
+mysql_info_schema_table_rows{schema="sys",table="processlist"} 0
+mysql_info_schema_table_rows{schema="sys",table="ps_check_lost_instrumentation"} 0
+mysql_info_schema_table_rows{schema="sys",table="schema_auto_increment_columns"} 0
+mysql_info_schema_table_rows{schema="sys",table="schema_index_statistics"} 0
+mysql_info_schema_table_rows{schema="sys",table="schema_object_overview"} 0
+mysql_info_schema_table_rows{schema="sys",table="schema_redundant_indexes"} 0
+mysql_info_schema_table_rows{schema="sys",table="schema_table_lock_waits"} 0
+mysql_info_schema_table_rows{schema="sys",table="schema_table_statistics"} 0
+mysql_info_schema_table_rows{schema="sys",table="schema_table_statistics_with_buffer"} 0
+mysql_info_schema_table_rows{schema="sys",table="schema_tables_with_full_table_scans"} 0
+mysql_info_schema_table_rows{schema="sys",table="schema_unused_indexes"} 0
+mysql_info_schema_table_rows{schema="sys",table="session"} 0
+mysql_info_schema_table_rows{schema="sys",table="session_ssl_status"} 0
+mysql_info_schema_table_rows{schema="sys",table="statement_analysis"} 0
+mysql_info_schema_table_rows{schema="sys",table="statements_with_errors_or_warnings"} 0
+mysql_info_schema_table_rows{schema="sys",table="statements_with_full_table_scans"} 0
+mysql_info_schema_table_rows{schema="sys",table="statements_with_runtimes_in_95th_percentile"} 0
+mysql_info_schema_table_rows{schema="sys",table="statements_with_sorting"} 0
+mysql_info_schema_table_rows{schema="sys",table="statements_with_temp_tables"} 0
+mysql_info_schema_table_rows{schema="sys",table="sys_config"} 2
+mysql_info_schema_table_rows{schema="sys",table="user_summary"} 0
+mysql_info_schema_table_rows{schema="sys",table="user_summary_by_file_io"} 0
+mysql_info_schema_table_rows{schema="sys",table="user_summary_by_file_io_type"} 0
+mysql_info_schema_table_rows{schema="sys",table="user_summary_by_stages"} 0
+mysql_info_schema_table_rows{schema="sys",table="user_summary_by_statement_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="user_summary_by_statement_type"} 0
+mysql_info_schema_table_rows{schema="sys",table="version"} 0
+mysql_info_schema_table_rows{schema="sys",table="wait_classes_global_by_avg_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="wait_classes_global_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="waits_by_host_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="waits_by_user_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="waits_global_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$host_summary"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$host_summary_by_file_io"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$host_summary_by_file_io_type"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$host_summary_by_stages"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$host_summary_by_statement_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$host_summary_by_statement_type"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$innodb_buffer_stats_by_schema"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$innodb_buffer_stats_by_table"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$innodb_lock_waits"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$io_by_thread_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$io_global_by_file_by_bytes"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$io_global_by_file_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$io_global_by_wait_by_bytes"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$io_global_by_wait_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$latest_file_io"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$memory_by_host_by_current_bytes"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$memory_by_thread_by_current_bytes"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$memory_by_user_by_current_bytes"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$memory_global_by_current_bytes"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$memory_global_total"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$processlist"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$ps_digest_95th_percentile_by_avg_us"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$ps_digest_avg_latency_distribution"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$ps_schema_table_statistics_io"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$schema_flattened_keys"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$schema_index_statistics"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$schema_table_lock_waits"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$schema_table_statistics"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$schema_table_statistics_with_buffer"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$schema_tables_with_full_table_scans"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$session"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$statement_analysis"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$statements_with_errors_or_warnings"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$statements_with_full_table_scans"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$statements_with_runtimes_in_95th_percentile"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$statements_with_sorting"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$statements_with_temp_tables"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$user_summary"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$user_summary_by_file_io"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$user_summary_by_file_io_type"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$user_summary_by_stages"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$user_summary_by_statement_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$user_summary_by_statement_type"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$wait_classes_global_by_avg_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$wait_classes_global_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$waits_by_host_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$waits_by_user_by_latency"} 0
+mysql_info_schema_table_rows{schema="sys",table="x$waits_global_by_latency"} 0
+# HELP mysql_info_schema_table_size The size of the table components from information_schema.tables
+# TYPE mysql_info_schema_table_size gauge
+mysql_info_schema_table_size{component="data_free",schema="books",table="authors"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="host_summary"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="host_summary_by_file_io"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="host_summary_by_file_io_type"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="host_summary_by_stages"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="host_summary_by_statement_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="host_summary_by_statement_type"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="innodb_buffer_stats_by_schema"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="innodb_buffer_stats_by_table"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="innodb_lock_waits"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="io_by_thread_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="io_global_by_file_by_bytes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="io_global_by_file_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="io_global_by_wait_by_bytes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="io_global_by_wait_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="latest_file_io"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="memory_by_host_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="memory_by_thread_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="memory_by_user_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="memory_global_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="memory_global_total"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="metrics"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="processlist"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="ps_check_lost_instrumentation"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="schema_auto_increment_columns"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="schema_index_statistics"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="schema_object_overview"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="schema_redundant_indexes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="schema_table_lock_waits"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="schema_table_statistics"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="schema_table_statistics_with_buffer"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="schema_tables_with_full_table_scans"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="schema_unused_indexes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="session"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="session_ssl_status"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="statement_analysis"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="statements_with_errors_or_warnings"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="statements_with_full_table_scans"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="statements_with_runtimes_in_95th_percentile"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="statements_with_sorting"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="statements_with_temp_tables"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="sys_config"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="user_summary"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="user_summary_by_file_io"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="user_summary_by_file_io_type"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="user_summary_by_stages"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="user_summary_by_statement_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="user_summary_by_statement_type"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="version"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="wait_classes_global_by_avg_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="wait_classes_global_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="waits_by_host_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="waits_by_user_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="waits_global_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$host_summary"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$host_summary_by_file_io"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$host_summary_by_file_io_type"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$host_summary_by_stages"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$host_summary_by_statement_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$host_summary_by_statement_type"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$innodb_buffer_stats_by_schema"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$innodb_buffer_stats_by_table"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$innodb_lock_waits"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$io_by_thread_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$io_global_by_file_by_bytes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$io_global_by_file_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$io_global_by_wait_by_bytes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$io_global_by_wait_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$latest_file_io"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$memory_by_host_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$memory_by_thread_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$memory_by_user_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$memory_global_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$memory_global_total"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$processlist"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$ps_digest_95th_percentile_by_avg_us"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$ps_digest_avg_latency_distribution"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$ps_schema_table_statistics_io"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$schema_flattened_keys"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$schema_index_statistics"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$schema_table_lock_waits"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$schema_table_statistics"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$schema_table_statistics_with_buffer"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$schema_tables_with_full_table_scans"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$session"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$statement_analysis"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$statements_with_errors_or_warnings"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$statements_with_full_table_scans"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$statements_with_runtimes_in_95th_percentile"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$statements_with_sorting"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$statements_with_temp_tables"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$user_summary"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$user_summary_by_file_io"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$user_summary_by_file_io_type"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$user_summary_by_stages"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$user_summary_by_statement_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$user_summary_by_statement_type"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$wait_classes_global_by_avg_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$wait_classes_global_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$waits_by_host_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$waits_by_user_by_latency"} 0
+mysql_info_schema_table_size{component="data_free",schema="sys",table="x$waits_global_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="books",table="authors"} 16384
+mysql_info_schema_table_size{component="data_length",schema="sys",table="host_summary"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="host_summary_by_file_io"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="host_summary_by_file_io_type"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="host_summary_by_stages"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="host_summary_by_statement_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="host_summary_by_statement_type"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="innodb_buffer_stats_by_schema"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="innodb_buffer_stats_by_table"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="innodb_lock_waits"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="io_by_thread_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="io_global_by_file_by_bytes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="io_global_by_file_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="io_global_by_wait_by_bytes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="io_global_by_wait_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="latest_file_io"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="memory_by_host_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="memory_by_thread_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="memory_by_user_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="memory_global_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="memory_global_total"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="metrics"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="processlist"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="ps_check_lost_instrumentation"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="schema_auto_increment_columns"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="schema_index_statistics"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="schema_object_overview"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="schema_redundant_indexes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="schema_table_lock_waits"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="schema_table_statistics"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="schema_table_statistics_with_buffer"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="schema_tables_with_full_table_scans"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="schema_unused_indexes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="session"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="session_ssl_status"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="statement_analysis"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="statements_with_errors_or_warnings"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="statements_with_full_table_scans"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="statements_with_runtimes_in_95th_percentile"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="statements_with_sorting"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="statements_with_temp_tables"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="sys_config"} 16384
+mysql_info_schema_table_size{component="data_length",schema="sys",table="user_summary"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="user_summary_by_file_io"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="user_summary_by_file_io_type"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="user_summary_by_stages"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="user_summary_by_statement_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="user_summary_by_statement_type"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="version"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="wait_classes_global_by_avg_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="wait_classes_global_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="waits_by_host_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="waits_by_user_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="waits_global_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$host_summary"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$host_summary_by_file_io"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$host_summary_by_file_io_type"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$host_summary_by_stages"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$host_summary_by_statement_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$host_summary_by_statement_type"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$innodb_buffer_stats_by_schema"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$innodb_buffer_stats_by_table"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$innodb_lock_waits"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$io_by_thread_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$io_global_by_file_by_bytes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$io_global_by_file_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$io_global_by_wait_by_bytes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$io_global_by_wait_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$latest_file_io"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$memory_by_host_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$memory_by_thread_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$memory_by_user_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$memory_global_by_current_bytes"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$memory_global_total"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$processlist"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$ps_digest_95th_percentile_by_avg_us"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$ps_digest_avg_latency_distribution"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$ps_schema_table_statistics_io"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$schema_flattened_keys"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$schema_index_statistics"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$schema_table_lock_waits"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$schema_table_statistics"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$schema_table_statistics_with_buffer"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$schema_tables_with_full_table_scans"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$session"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$statement_analysis"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$statements_with_errors_or_warnings"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$statements_with_full_table_scans"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$statements_with_runtimes_in_95th_percentile"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$statements_with_sorting"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$statements_with_temp_tables"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$user_summary"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$user_summary_by_file_io"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$user_summary_by_file_io_type"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$user_summary_by_stages"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$user_summary_by_statement_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$user_summary_by_statement_type"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$wait_classes_global_by_avg_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$wait_classes_global_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$waits_by_host_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$waits_by_user_by_latency"} 0
+mysql_info_schema_table_size{component="data_length",schema="sys",table="x$waits_global_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="books",table="authors"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="host_summary"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="host_summary_by_file_io"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="host_summary_by_file_io_type"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="host_summary_by_stages"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="host_summary_by_statement_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="host_summary_by_statement_type"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="innodb_buffer_stats_by_schema"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="innodb_buffer_stats_by_table"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="innodb_lock_waits"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="io_by_thread_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="io_global_by_file_by_bytes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="io_global_by_file_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="io_global_by_wait_by_bytes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="io_global_by_wait_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="latest_file_io"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="memory_by_host_by_current_bytes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="memory_by_thread_by_current_bytes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="memory_by_user_by_current_bytes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="memory_global_by_current_bytes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="memory_global_total"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="metrics"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="processlist"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="ps_check_lost_instrumentation"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="schema_auto_increment_columns"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="schema_index_statistics"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="schema_object_overview"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="schema_redundant_indexes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="schema_table_lock_waits"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="schema_table_statistics"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="schema_table_statistics_with_buffer"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="schema_tables_with_full_table_scans"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="schema_unused_indexes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="session"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="session_ssl_status"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="statement_analysis"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="statements_with_errors_or_warnings"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="statements_with_full_table_scans"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="statements_with_runtimes_in_95th_percentile"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="statements_with_sorting"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="statements_with_temp_tables"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="sys_config"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="user_summary"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="user_summary_by_file_io"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="user_summary_by_file_io_type"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="user_summary_by_stages"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="user_summary_by_statement_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="user_summary_by_statement_type"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="version"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="wait_classes_global_by_avg_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="wait_classes_global_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="waits_by_host_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="waits_by_user_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="waits_global_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$host_summary"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$host_summary_by_file_io"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$host_summary_by_file_io_type"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$host_summary_by_stages"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$host_summary_by_statement_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$host_summary_by_statement_type"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$innodb_buffer_stats_by_schema"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$innodb_buffer_stats_by_table"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$innodb_lock_waits"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$io_by_thread_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$io_global_by_file_by_bytes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$io_global_by_file_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$io_global_by_wait_by_bytes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$io_global_by_wait_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$latest_file_io"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$memory_by_host_by_current_bytes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$memory_by_thread_by_current_bytes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$memory_by_user_by_current_bytes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$memory_global_by_current_bytes"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$memory_global_total"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$processlist"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$ps_digest_95th_percentile_by_avg_us"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$ps_digest_avg_latency_distribution"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$ps_schema_table_statistics_io"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$schema_flattened_keys"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$schema_index_statistics"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$schema_table_lock_waits"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$schema_table_statistics"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$schema_table_statistics_with_buffer"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$schema_tables_with_full_table_scans"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$session"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$statement_analysis"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$statements_with_errors_or_warnings"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$statements_with_full_table_scans"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$statements_with_runtimes_in_95th_percentile"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$statements_with_sorting"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$statements_with_temp_tables"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$user_summary"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$user_summary_by_file_io"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$user_summary_by_file_io_type"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$user_summary_by_stages"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$user_summary_by_statement_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$user_summary_by_statement_type"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$wait_classes_global_by_avg_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$wait_classes_global_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$waits_by_host_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$waits_by_user_by_latency"} 0
+mysql_info_schema_table_size{component="index_length",schema="sys",table="x$waits_global_by_latency"} 0
+# HELP mysql_info_schema_table_version The version number of the table's .frm file
+# TYPE mysql_info_schema_table_version gauge
+mysql_info_schema_table_version{create_options="",engine="InnoDB",row_format="Dynamic",schema="books",table="authors",type="BASE TABLE"} 10
+mysql_info_schema_table_version{create_options="",engine="InnoDB",row_format="Dynamic",schema="sys",table="sys_config",type="BASE TABLE"} 10
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="host_summary",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="host_summary_by_file_io",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="host_summary_by_file_io_type",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="host_summary_by_stages",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="host_summary_by_statement_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="host_summary_by_statement_type",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="innodb_buffer_stats_by_schema",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="innodb_buffer_stats_by_table",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="innodb_lock_waits",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="io_by_thread_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="io_global_by_file_by_bytes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="io_global_by_file_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="io_global_by_wait_by_bytes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="io_global_by_wait_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="latest_file_io",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="memory_by_host_by_current_bytes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="memory_by_thread_by_current_bytes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="memory_by_user_by_current_bytes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="memory_global_by_current_bytes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="memory_global_total",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="metrics",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="processlist",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="ps_check_lost_instrumentation",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="schema_auto_increment_columns",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="schema_index_statistics",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="schema_object_overview",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="schema_redundant_indexes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="schema_table_lock_waits",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="schema_table_statistics",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="schema_table_statistics_with_buffer",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="schema_tables_with_full_table_scans",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="schema_unused_indexes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="session",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="session_ssl_status",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="statement_analysis",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="statements_with_errors_or_warnings",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="statements_with_full_table_scans",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="statements_with_runtimes_in_95th_percentile",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="statements_with_sorting",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="statements_with_temp_tables",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="user_summary",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="user_summary_by_file_io",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="user_summary_by_file_io_type",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="user_summary_by_stages",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="user_summary_by_statement_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="user_summary_by_statement_type",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="version",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="wait_classes_global_by_avg_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="wait_classes_global_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="waits_by_host_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="waits_by_user_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="waits_global_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$host_summary",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$host_summary_by_file_io",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$host_summary_by_file_io_type",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$host_summary_by_stages",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$host_summary_by_statement_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$host_summary_by_statement_type",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$innodb_buffer_stats_by_schema",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$innodb_buffer_stats_by_table",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$innodb_lock_waits",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$io_by_thread_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$io_global_by_file_by_bytes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$io_global_by_file_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$io_global_by_wait_by_bytes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$io_global_by_wait_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$latest_file_io",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$memory_by_host_by_current_bytes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$memory_by_thread_by_current_bytes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$memory_by_user_by_current_bytes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$memory_global_by_current_bytes",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$memory_global_total",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$processlist",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$ps_digest_95th_percentile_by_avg_us",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$ps_digest_avg_latency_distribution",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$ps_schema_table_statistics_io",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$schema_flattened_keys",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$schema_index_statistics",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$schema_table_lock_waits",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$schema_table_statistics",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$schema_table_statistics_with_buffer",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$schema_tables_with_full_table_scans",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$session",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$statement_analysis",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$statements_with_errors_or_warnings",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$statements_with_full_table_scans",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$statements_with_runtimes_in_95th_percentile",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$statements_with_sorting",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$statements_with_temp_tables",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$user_summary",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$user_summary_by_file_io",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$user_summary_by_file_io_type",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$user_summary_by_stages",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$user_summary_by_statement_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$user_summary_by_statement_type",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$wait_classes_global_by_avg_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$wait_classes_global_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$waits_by_host_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$waits_by_user_by_latency",type="VIEW"} 0
+mysql_info_schema_table_version{create_options="NONE",engine="NONE",row_format="NONE",schema="sys",table="x$waits_global_by_latency",type="VIEW"} 0
+# HELP mysql_up Whether the MySQL server is up.
+# TYPE mysql_up gauge
+mysql_up 1
+# HELP mysql_version_info MySQL version and distribution.
+# TYPE mysql_version_info gauge
+mysql_version_info{innodb_version="5.7.27",version="5.7.27-0ubuntu0.16.04.1",version_comment="(Ubuntu)"} 1
+# HELP mysqld_exporter_build_info A metric with a constant '1' value labeled by version, revision, branch, and goversion from which mysqld_exporter was built.
+# TYPE mysqld_exporter_build_info gauge
+mysqld_exporter_build_info{branch="HEAD",goversion="go1.10.3",revision="5d7179615695a61ecc3b5bf90a2a7c76a9592cdd",version="0.11.0"} 1
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 1.01
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1024
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 9
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 1.3082624e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.5713139844e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 1.7534976e+07
